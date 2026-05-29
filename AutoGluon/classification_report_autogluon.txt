@@ -1,0 +1,17 @@
+RESULTADOS - AUTOGLUON
+====================================================
+Accuracy          : 0.992176
+Balanced Accuracy : 0.918321
+Precision         : 0.992251
+Recall            : 0.992176
+F1-score          : 0.992211
+
+Relatório de classificação:
+              precision    recall  f1-score   support
+
+      Benign       0.83      0.84      0.83      4179
+   Malicious       1.00      1.00      1.00    175897
+
+    accuracy                           0.99    180076
+   macro avg       0.91      0.92      0.91    180076
+weighted avg       0.99      0.99      0.99    180076
