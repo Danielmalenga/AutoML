@@ -1,0 +1,2 @@
+Modelo,Accuracy,Balanced Accuracy,Precision Macro,Recall Macro,Macro-F1,Precision Weighted,Recall Weighted,Weighted-F1,MCC
+h2o,0.875,0.875,0.8787878787878788,0.875,0.87468671679198,0.8787878787878789,0.875,0.8746867167919798,0.753778361444409

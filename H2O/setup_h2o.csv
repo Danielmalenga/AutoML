@@ -1,0 +1,10 @@
+Descrição,Valor
+Framework,H2O AutoML
+Melhor modelo,GBM_2_AutoML_1_20260613_181134
+Target,label_binary
+Tipo de problema,Classificação binária
+Métrica principal,mean_per_class_error
+Tempo limite,300
+Treino,"(320, 36)"
+Teste,"(80, 36)"
+Random State,42
