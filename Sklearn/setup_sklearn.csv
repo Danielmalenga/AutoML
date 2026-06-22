@@ -1,0 +1,9 @@
+Descrição,Valor
+Framework,Sklearn
+Modelo,RandomForestClassifier
+Target,label_binary
+Tipo de problema,Classificação binária
+Métrica principal,Macro-F1
+Treino,"(320, 36)"
+Teste,"(80, 36)"
+Random State,42

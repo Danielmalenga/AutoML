@@ -1,0 +1,2 @@
+Modelo,Accuracy,Balanced Accuracy,Precision Macro,Recall Macro,Macro-F1,Precision Weighted,Recall Weighted,Weighted-F1,MCC
+sklearn,0.875,0.875,0.8759398496240601,0.875,0.8749218261413383,0.8759398496240601,0.875,0.8749218261413384,0.7509392614826383
