@@ -1,0 +1,2 @@
+Modelo,Accuracy,Balanced Accuracy,Precision Macro,Recall Macro,Macro-F1,Precision Weighted,Recall Weighted,Weighted-F1,MCC
+flaml,0.85,0.85,0.8508771929824561,0.85,0.849906191369606,0.8508771929824561,0.85,0.849906191369606,0.7008766440504625

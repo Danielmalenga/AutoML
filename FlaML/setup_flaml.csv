@@ -1,0 +1,10 @@
+Descrição,Valor
+Framework,FLAML
+Melhor estimador,lgbm
+Target,label_binary
+Tipo de problema,Classificação binária
+Métrica principal,macro_f1
+Tempo limite,300
+Treino,"(320, 36)"
+Teste,"(80, 36)"
+Random State,42

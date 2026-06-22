@@ -1,0 +1,2 @@
+best_estimator,best_config,best_loss
+lgbm,"{'n_estimators': 161, 'num_leaves': 6, 'min_child_samples': 11, 'learning_rate': 1.0, 'log_max_bin': 4, 'colsample_bytree': np.float64(0.4893426864929921), 'reg_alpha': np.float64(0.0026549710515942323), 'reg_lambda': np.float64(0.2312838229725406)}",0.07819463295506938
