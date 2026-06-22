@@ -1,0 +1,12 @@
+Descrição,Valor
+Framework,TPOT
+Target,label_binary
+Tipo de problema,Classificação binária
+Métrica principal,f1_macro
+Generations,2
+Population Size,10
+Tempo máximo,5
+Tempo máximo por avaliação,2
+Treino,"(320, 36)"
+Teste,"(80, 36)"
+Random State,42
