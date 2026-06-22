@@ -1,0 +1,10 @@
+Descrição,Valor
+Framework,LazyPredict
+Target,label_binary
+Tipo de problema,Classificação binária
+Métrica principal,Macro-F1
+Treino,"(320, 36)"
+Teste,"(80, 36)"
+Modelos comparados,26
+Melhor modelo,LogisticRegression
+Random State,42

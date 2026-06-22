@@ -1,0 +1,2 @@
+Modelo,Accuracy,Balanced Accuracy,Precision Macro,Recall Macro,Macro-F1,Precision Weighted,Recall Weighted,Weighted-F1,MCC
+lazypredict,0.8875,0.8875,0.8877423389618512,0.8875,0.8874824191279886,0.8877423389618512,0.8875,0.8874824191279889,0.7752423010845508
