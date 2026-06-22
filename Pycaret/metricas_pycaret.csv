@@ -1,0 +1,12 @@
+Métrica,Valor
+Accuracy,0.7375
+Balanced Accuracy,0.7375
+Precision,0.7714285714285715
+Recall / Sensibilidade,0.675
+F1-score,0.72
+Specificity,0.8
+MCC,0.4787549991450211
+False Positive Rate,0.2
+False Negative Rate,0.325
+ROC-AUC,0.4990625000000001
+Average Precision,0.5382496300506959

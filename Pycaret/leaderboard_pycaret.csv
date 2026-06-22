@@ -1,0 +1,21 @@
+Description,Value
+Session id,42
+Target,label_binary
+Target type,Binary
+Target mapping,"Benign: 0, Malicious: 1"
+Original data shape,"(320, 38)"
+Transformed data shape,"(320, 38)"
+Transformed train set shape,"(224, 38)"
+Transformed test set shape,"(96, 38)"
+Numeric features,37
+Preprocess,True
+Imputation type,simple
+Numeric imputation,mean
+Categorical imputation,mode
+Fold Generator,StratifiedKFold
+Fold Number,5
+CPU Jobs,-1
+Use GPU,False
+Log Experiment,False
+Experiment Name,clf-default-name
+USI,6e15
