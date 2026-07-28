@@ -1,0 +1,23 @@
+{
+  "framework": "autosklearn",
+  "status": "success",
+  "inicio_epoch": 1785241292.2937014,
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_autosklearn/bin/python",
+  "fim_epoch": 1785241901.3989694,
+  "duracao_segundos": 609.1052680015564,
+  "metricas": {
+    "Accuracy": 0.98875,
+    "Balanced Accuracy": 0.98875,
+    "Precision Macro": 0.9888997255409469,
+    "Recall Macro": 0.98875,
+    "Macro-F1": 0.9887491386059246,
+    "Weighted-F1": 0.9887491386059246,
+    "MCC": 0.9776497140758296,
+    "Precision Malicious": 0.9974554707379135,
+    "Recall Malicious": 0.98,
+    "F1 Malicious": 0.9886506935687264,
+    "ROC-AUC": 0.995425,
+    "Average Precision": 0.9967596919284434
+  }
+}

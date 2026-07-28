@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+autosklearn,Accuracy,0.98875
+autosklearn,Balanced Accuracy,0.98875
+autosklearn,Precision Macro,0.9888997255409469
+autosklearn,Recall Macro,0.98875
+autosklearn,Macro-F1,0.9887491386059246
+autosklearn,Weighted-F1,0.9887491386059246
+autosklearn,MCC,0.9776497140758296
+autosklearn,Precision Malicious,0.9974554707379135
+autosklearn,Recall Malicious,0.98
+autosklearn,F1 Malicious,0.9886506935687264
+autosklearn,ROC-AUC,0.995425
+autosklearn,Average Precision,0.9967596919284434
