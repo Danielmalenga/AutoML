@@ -1,0 +1,678 @@
+Verbosity: 3 (Detailed Logging)
+	Failed to import torch or check CUDA availability!Please ensure you have the correct version of PyTorch installed by running `pip install -U torch`
+=================== System Info ===================
+AutoGluon Version:  1.5.0
+Python Version:     3.11.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP Thu Apr 30 18:17:14 UTC 2026
+CPU Count:          2
+Pytorch Version:    Can't import torch
+CUDA Version:       Can't get cuda version from torch
+GPU Count:          WARNING: Exception was raised when calculating GPU count (ModuleNotFoundError)
+Memory Avail:       10.74 GB / 12.67 GB (84.8%)
+Disk Space Avail:   3.46 GB / 15.00 GB (23.1%)
+	WARNING: Available disk space is low and there is a risk that AutoGluon will run out of disk during fit, causing an exception. 
+	We recommend a minimum available disk space of 10 GB, and large datasets may require more.
+===================================================
+Presets specified: ['best_quality']
+============ fit kwarg info ============
+User Specified kwargs:
+{'auto_stack': True}
+Full kwargs:
+{'_experimental_dynamic_hyperparameters': False,
+ '_feature_generator_kwargs': None,
+ '_save_bag_folds': None,
+ 'ag_args': None,
+ 'ag_args_ensemble': None,
+ 'ag_args_fit': None,
+ 'auto_stack': True,
+ 'calibrate': 'auto',
+ 'delay_bag_sets': False,
+ 'ds_args': {'clean_up_fits': True,
+             'detection_time_frac': 0.25,
+             'enable_callbacks': True,
+             'enable_ray_logging': True,
+             'holdout_data': None,
+             'holdout_frac': 0.1111111111111111,
+             'memory_safe_fits': 'auto',
+             'n_folds': 2,
+             'n_repeats': 1,
+             'validation_procedure': 'holdout'},
+ 'excluded_model_types': None,
+ 'feature_generator': 'auto',
+ 'feature_prune_kwargs': None,
+ 'holdout_frac': None,
+ 'hyperparameter_tune_kwargs': None,
+ 'included_model_types': None,
+ 'keep_only_best': False,
+ 'learning_curves': False,
+ 'name_suffix': None,
+ 'num_bag_folds': None,
+ 'num_bag_sets': None,
+ 'num_stack_levels': None,
+ 'pseudo_data': None,
+ 'raise_on_model_failure': False,
+ 'raise_on_no_models_fitted': True,
+ 'refit_full': False,
+ 'save_bag_folds': None,
+ 'save_space': False,
+ 'set_best_to_refit_full': False,
+ 'test_data': None,
+ 'unlabeled_data': None,
+ 'use_bag_holdout': False,
+ 'verbosity': 3}
+========================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 150s of the 600s of remaining time (25%).
+		Context path: "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho"
+Running DyStack sub-fit ...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/predictor.pkl
+Beginning AutoGluon training ... Time limit = 150s
+AutoGluon will save models to "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho"
+Train Data Rows:    11377
+Train Data Columns: 39
+Label Column:       label_grouped
+Problem Type:       multiclass
+Preprocessing data ...
+Train Data Class Count: 8
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10985.24 MB
+	Train Data (Original)  Memory Usage: 1.69 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Original Features (exact raw dtype, raw dtype):
+				('float32', 'float') : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+		Skipping CategoryFeatureGenerator: No input feature with required dtypes.
+		Skipping DatetimeFeatureGenerator: No input feature with required dtypes.
+		Skipping TextSpecialFeatureGenerator: No input feature with required dtypes.
+		Skipping TextNgramFeatureGenerator: No input feature with required dtypes.
+		Skipping IdentityFeatureGenerator: No input feature with required dtypes.
+		Skipping IsNanFeatureGenerator: No input feature with required dtypes.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+			2 duplicate columns removed: ['LLC', 'Tot size']
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Unused Original Features (Count: 2): ['LLC', 'Tot size']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('float', []) : 2 | ['LLC', 'Tot size']
+	Types of features in original data (exact raw dtype, raw dtype):
+		('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (exact raw dtype, raw dtype):
+		('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	0.1s = Fit runtime
+	37 features in original data used to generate 37 features in processed data.
+	Train Data (Processed) Memory Usage: 1.61 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.17s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'f1_macro'
+	To change this, specify the eval_metric parameter of Predictor()
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{}],
+	'XGB': [{}],
+	'RF': [{}],
+	'XT': [{}],
+}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/utils/data/X.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/utils/data/y.pkl
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Model configs that will be trained (in order):
+	LightGBM_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 99.86s of the 149.82s of remaining time.
+	Fitting LightGBM_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/model_template.pkl
+Will use sequential fold fitting strategy because import of ray failed. Reason: ray is required to train folds in parallel for TabularPredictor or HPO for MultiModalPredictor. A quick tip is to install via `pip install "ray>=2.43.0,<2.53.0"`
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 387. Best iteration is:
+	[113]	valid_set's multi_logloss: 0.643349	valid_set's f1_macro: 0.742093
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 354. Best iteration is:
+	[200]	valid_set's multi_logloss: 0.661132	valid_set's f1_macro: 0.740871
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 465. Best iteration is:
+	[390]	valid_set's multi_logloss: 0.688157	valid_set's f1_macro: 0.759501
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 440. Best iteration is:
+	[429]	valid_set's multi_logloss: 0.725761	valid_set's f1_macro: 0.739044
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 386. Best iteration is:
+	[357]	valid_set's multi_logloss: 0.676742	valid_set's f1_macro: 0.746206
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 412. Best iteration is:
+	[131]	valid_set's multi_logloss: 0.629715	valid_set's f1_macro: 0.744331
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/model.pkl
+	0.7434	 = Validation score   (f1_macro)
+	88.6s	 = Training   runtime
+	2.77s	 = Validation runtime
+	513.6	 = Inference  throughput (rows/s | 1423 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: RandomForest_BAG_L1 ... Training model for up to 5.76s of the 55.72s of remaining time.
+	Fitting RandomForest_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.4/10.7 GB
+	Warning: Reducing model 'n_estimators' from 300 -> 182 due to low time. Expected time usage reduced from 9.3s -> 5.7s...
+	2.3s	= Estimated out-of-fold prediction time...
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/model.pkl
+	0.7232	 = Validation score   (f1_macro)
+	6.87s	 = Training   runtime
+	0.6s	 = Validation runtime
+	19120.9	 = Inference  throughput (rows/s | 11377 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Skipping ExtraTrees_BAG_L1 due to lack of time remaining.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Skipping XGBoost_BAG_L1 due to lack of time remaining.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 149.83s of the 46.89s of remaining time.
+	Fitting WeightedEnsemble_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.6 GB
+Ensemble size: 1
+Ensemble weights: 
+[1. 0.]
+	0.02s	= Estimated out-of-fold prediction time...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L1': 1.0}
+	0.7434	 = Validation score   (f1_macro)
+	0.42s	 = Training   runtime
+	0.01s	 = Validation runtime
+	513.4	 = Inference  throughput (rows/s | 1423 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Model configs that will be trained (in order):
+	LightGBM_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L2 models, fit_strategy="sequential" ...
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 46.34s of the 46.32s of remaining time.
+	Fitting LightGBM_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 134. Best iteration is:
+	[13]	valid_set's multi_logloss: 1.00196	valid_set's f1_macro: 0.740376
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 127. Best iteration is:
+	[2]	valid_set's multi_logloss: 1.71445	valid_set's f1_macro: 0.739631
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 93. Best iteration is:
+	[31]	valid_set's multi_logloss: 0.735055	valid_set's f1_macro: 0.751858
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 127. Best iteration is:
+	[28]	valid_set's multi_logloss: 0.784054	valid_set's f1_macro: 0.724393
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 156. Best iteration is:
+	[64]	valid_set's multi_logloss: 0.659202	valid_set's f1_macro: 0.734912
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 114. Best iteration is:
+	[64]	valid_set's multi_logloss: 0.674149	valid_set's f1_macro: 0.745107
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 163. Best iteration is:
+	[57]	valid_set's multi_logloss: 0.663398	valid_set's f1_macro: 0.744824
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Ran out of time, early stopping on iteration 189. Best iteration is:
+	[31]	valid_set's multi_logloss: 0.733123	valid_set's f1_macro: 0.752801
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/model.pkl
+	0.742	 = Validation score   (f1_macro)
+	43.93s	 = Training   runtime
+	0.2s	 = Validation runtime
+	467.1	 = Inference  throughput (rows/s | 1423 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: RandomForest_BAG_L2 ... Training model for up to 1.52s of the 1.51s of remaining time.
+	Fitting RandomForest_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.4/10.6 GB
+	Warning: Model is expected to require 22.8s to train, which exceeds the maximum time limit of 1.4s, skipping model...
+	Time limit exceeded... Skipping RandomForest_BAG_L2.
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/model_template.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Skipping ExtraTrees_BAG_L2 due to lack of time remaining.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Skipping XGBoost_BAG_L2 due to lack of time remaining.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L3: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 149.83s of the 0.90s of remaining time.
+	Fitting WeightedEnsemble_L3 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.6 GB
+Ensemble size: 1
+Ensemble weights: 
+[1. 0. 0.]
+	0.02s	= Estimated out-of-fold prediction time...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L1': 1.0}
+	0.7434	 = Validation score   (f1_macro)
+	0.6s	 = Training   runtime
+	0.01s	 = Validation runtime
+	513.3	 = Inference  throughput (rows/s | 1423 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+AutoGluon training complete, total runtime = 149.9s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 513.4 rows/s (1423 batch size)
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/predictor.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/version.txt with contents "1.5.0"
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/metadata.json
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho")
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/model.pkl
+Deleting DyStack predictor artifacts (clean_up_fits=True) ...
+Leaderboard on holdout data (DyStack):
+                 model  score_holdout  score_val eval_metric  pred_time_test  pred_time_val    fit_time  pred_time_test_marginal  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0      LightGBM_BAG_L1       0.737742   0.743449    f1_macro        3.944097       2.770888   88.597791                 3.944097                2.770888          88.597791            1       True          1
+1  WeightedEnsemble_L2       0.737742   0.743449    f1_macro        3.950211       2.779363   89.015372                 0.006114                0.008475           0.417580            2       True          3
+2  WeightedEnsemble_L3       0.737742   0.743449    f1_macro        3.950964       2.779878   89.202604                 0.006867                0.008990           0.604813            3       True          5
+3      LightGBM_BAG_L2       0.730628   0.741955    f1_macro        4.687252       3.566927  139.396599                 0.326775                0.201037          43.926618            2       True          4
+4  RandomForest_BAG_L1       0.727062   0.723154    f1_macro        0.416380       0.595002    6.872189                 0.416380                0.595002           6.872189            1       True          2
+	1	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: False)
+	155s	 = DyStack   runtime |	445s	 = Remaining runtime
+Starting main fit with num_stack_levels=1.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=1)`
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/predictor.pkl
+Beginning AutoGluon training ... Time limit = 445s
+AutoGluon will save models to "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon"
+Train Data Rows:    12800
+Train Data Columns: 39
+Label Column:       label_grouped
+Problem Type:       multiclass
+Preprocessing data ...
+Train Data Class Count: 8
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10815.95 MB
+	Train Data (Original)  Memory Usage: 1.90 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Original Features (exact raw dtype, raw dtype):
+				('float32', 'float') : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+		Skipping CategoryFeatureGenerator: No input feature with required dtypes.
+		Skipping DatetimeFeatureGenerator: No input feature with required dtypes.
+		Skipping TextSpecialFeatureGenerator: No input feature with required dtypes.
+		Skipping TextNgramFeatureGenerator: No input feature with required dtypes.
+		Skipping IdentityFeatureGenerator: No input feature with required dtypes.
+		Skipping IsNanFeatureGenerator: No input feature with required dtypes.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 39 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			39 features in original data used to generate 39 features in processed data.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+			2 duplicate columns removed: ['LLC', 'Tot size']
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Unused Original Features (Count: 2): ['LLC', 'Tot size']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('float', []) : 2 | ['LLC', 'Tot size']
+	Types of features in original data (exact raw dtype, raw dtype):
+		('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (exact raw dtype, raw dtype):
+		('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	0.1s = Fit runtime
+	37 features in original data used to generate 37 features in processed data.
+	Train Data (Processed) Memory Usage: 1.81 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.12s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'f1_macro'
+	To change this, specify the eval_metric parameter of Predictor()
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/learner.pkl
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{}],
+	'XGB': [{}],
+	'RF': [{}],
+	'XT': [{}],
+}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/utils/data/X.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/utils/data/y.pkl
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Model configs that will be trained (in order):
+	LightGBM_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 296.28s of the 444.53s of remaining time.
+	Fitting LightGBM_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+	0.7412	 = Validation score   (f1_macro)
+	83.82s	 = Training   runtime
+	1.76s	 = Validation runtime
+	909.9	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: RandomForest_BAG_L1 ... Training model for up to 208.80s of the 357.05s of remaining time.
+	Fitting RandomForest_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.5/10.6 GB
+	3.08s	= Estimated out-of-fold prediction time...
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+	0.7266	 = Validation score   (f1_macro)
+	12.05s	 = Training   runtime
+	0.65s	 = Validation runtime
+	19717.5	 = Inference  throughput (rows/s | 12800 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: ExtraTrees_BAG_L1 ... Training model for up to 194.45s of the 342.70s of remaining time.
+	Fitting ExtraTrees_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.5/10.5 GB
+	3.59s	= Estimated out-of-fold prediction time...
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+	0.7077	 = Validation score   (f1_macro)
+	4.6s	 = Training   runtime
+	0.7s	 = Validation runtime
+	18396.8	 = Inference  throughput (rows/s | 12800 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 186.96s of the 335.21s of remaining time.
+	Fitting XGBoost_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+Ran out of time, early stopping on iteration 449. Best iteration is: 	[196]	-0.754044
+Ran out of time, early stopping on iteration 448. Best iteration is: 	[204]	-0.735893
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+	0.7392	 = Validation score   (f1_macro)
+	147.91s	 = Training   runtime
+	1.5s	 = Validation runtime
+	1067.7	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.00s of the 184.26s of remaining time.
+	Fitting WeightedEnsemble_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.4 GB
+Ensemble size: 4
+Ensemble weights: 
+[0.5  0.25 0.   0.25]
+	0.05s	= Estimated out-of-fold prediction time...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L1': 0.5, 'RandomForest_BAG_L1': 0.25, 'XGBoost_BAG_L1': 0.25}
+	0.7418	 = Validation score   (f1_macro)
+	0.77s	 = Training   runtime
+	0.01s	 = Validation runtime
+	479.2	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Model configs that will be trained (in order):
+	LightGBM_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L2 models, fit_strategy="sequential" ...
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 183.38s of the 183.35s of remaining time.
+	Fitting LightGBM_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/model.pkl
+	0.7421	 = Validation score   (f1_macro)
+	128.3s	 = Training   runtime
+	0.4s	 = Validation runtime
+	418.4	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: RandomForest_BAG_L2 ... Training model for up to 53.74s of the 53.71s of remaining time.
+	Fitting RandomForest_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.5/10.4 GB
+	3.93s	= Estimated out-of-fold prediction time...
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/model.pkl
+	0.7418	 = Validation score   (f1_macro)
+	22.47s	 = Training   runtime
+	0.99s	 = Validation runtime
+	450.9	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: ExtraTrees_BAG_L2 ... Training model for up to 28.93s of the 28.90s of remaining time.
+	Fitting ExtraTrees_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.5/10.3 GB
+	2.82s	= Estimated out-of-fold prediction time...
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/model.pkl
+	0.7391	 = Validation score   (f1_macro)
+	4.76s	 = Training   runtime
+	0.77s	 = Validation runtime
+	454.4	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 21.69s of the 21.66s of remaining time.
+	Fitting XGBoost_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+Ran out of time, early stopping on iteration 13. Best iteration is: 	[7]	-0.728659
+Ran out of time, early stopping on iteration 7. Best iteration is: 	[4]	-0.746475
+Ran out of time, early stopping on iteration 7. Best iteration is: 	[3]	-0.727424
+Ran out of time, early stopping on iteration 8. Best iteration is: 	[1]	-0.737595
+Ran out of time, early stopping on iteration 16. Best iteration is: 	[12]	-0.745325
+Ran out of time, early stopping on iteration 19. Best iteration is: 	[7]	-0.748961
+Ran out of time, early stopping on iteration 20. Best iteration is: 	[9]	-0.756992
+Ran out of time, early stopping on iteration 16. Best iteration is: 	[6]	-0.746394
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/model.pkl
+	0.7424	 = Validation score   (f1_macro)
+	20.51s	 = Training   runtime
+	0.12s	 = Validation runtime
+	451.4	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L3: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 360.00s of the 0.45s of remaining time.
+	Fitting WeightedEnsemble_L3 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.3 GB
+Ensemble size: 19
+Ensemble weights: 
+[0.15789474 0.         0.05263158 0.         0.26315789 0.21052632
+ 0.         0.31578947]
+	0.08s	= Estimated out-of-fold prediction time...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/model.pkl
+	Ensemble Weights: {'XGBoost_BAG_L2': 0.316, 'LightGBM_BAG_L2': 0.263, 'RandomForest_BAG_L2': 0.211, 'LightGBM_BAG_L1': 0.158, 'ExtraTrees_BAG_L1': 0.053}
+	0.7466	 = Validation score   (f1_macro)
+	1.41s	 = Training   runtime
+	0.01s	 = Validation runtime
+	393.3	 = Inference  throughput (rows/s | 1600 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+AutoGluon training complete, total runtime = 445.82s ... Best model: WeightedEnsemble_L3 | Estimated inference throughput: 393.3 rows/s (1600 batch size)
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/predictor.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/version.txt with contents "1.5.0"
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/metadata.json
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon")
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/LightGBM_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/RandomForest_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/XGBoost_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/agrupado8/autogluon/modelo_autogluon/models/WeightedEnsemble_L3/model.pkl
