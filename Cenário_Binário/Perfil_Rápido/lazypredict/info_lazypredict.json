@@ -1,0 +1,5 @@
+{
+  "search_metric": "Macro-F1 customizado",
+  "best_model": "AdaBoostClassifier",
+  "mode": "stable"
+}

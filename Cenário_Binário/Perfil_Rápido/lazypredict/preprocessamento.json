@@ -1,0 +1,24 @@
+{
+  "train_shape": [
+    3200,
+    37
+  ],
+  "test_shape": [
+    800,
+    37
+  ],
+  "classes_train": {
+    "Malicious": 1600,
+    "Benign": 1600
+  },
+  "classes_test": {
+    "Malicious": 400,
+    "Benign": 400
+  },
+  "colunas_removidas_vazias": [],
+  "colunas_removidas_constantes": [
+    "Telnet",
+    "SMTP"
+  ],
+  "numero_features": 37
+}

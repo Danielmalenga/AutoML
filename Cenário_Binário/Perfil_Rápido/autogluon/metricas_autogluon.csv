@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+autogluon,Accuracy,0.99
+autogluon,Balanced Accuracy,0.99
+autogluon,Precision Macro,0.9901960784313726
+autogluon,Recall Macro,0.99
+autogluon,Macro-F1,0.9899989998999901
+autogluon,Weighted-F1,0.98999899989999
+autogluon,MCC,0.9801960588196069
+autogluon,Precision Malicious,1.0
+autogluon,Recall Malicious,0.98
+autogluon,F1 Malicious,0.98989898989899
+autogluon,ROC-AUC,0.9966187500000001
+autogluon,Average Precision,0.9975653114180629
