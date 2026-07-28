@@ -1,0 +1,29 @@
+Collecting pip==23.3.2
+  Downloading pip-23.3.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting setuptools==68.2.2
+  Downloading setuptools-68.2.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting wheel==0.41.3
+  Downloading wheel-0.41.3-py3-none-any.whl.metadata (2.2 kB)
+Collecting Cython==0.29.36
+  Downloading Cython-0.29.36-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (3.1 kB)
+Downloading pip-23.3.2-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 55.9 MB/s eta 0:00:00
+Downloading setuptools-68.2.2-py3-none-any.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 518.0 MB/s eta 0:00:00
+Downloading wheel-0.41.3-py3-none-any.whl (65 kB)
+Downloading Cython-0.29.36-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 268.4 MB/s eta 0:00:00
+Installing collected packages: wheel, setuptools, pip, Cython
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.45.1
+    Uninstalling wheel-0.45.1:
+      Successfully uninstalled wheel-0.45.1
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 75.3.0
+    Uninstalling setuptools-75.3.0:
+      Successfully uninstalled setuptools-75.3.0
+  Attempting uninstall: pip
+    Found existing installation: pip 24.3.1
+    Uninstalling pip-24.3.1:
+      Successfully uninstalled pip-24.3.1
+Successfully installed Cython-0.29.36 pip-23.3.2 setuptools-68.2.2 wheel-0.41.3

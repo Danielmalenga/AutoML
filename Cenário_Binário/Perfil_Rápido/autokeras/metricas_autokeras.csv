@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+autokeras,Accuracy,0.9775
+autokeras,Balanced Accuracy,0.9775
+autokeras,Precision Macro,0.9777986241400876
+autokeras,Recall Macro,0.9775
+autokeras,Macro-F1,0.9774964838255977
+autokeras,Weighted-F1,0.9774964838255977
+autokeras,MCC,0.9552985774654787
+autokeras,Precision Malicious,0.9897435897435898
+autokeras,Recall Malicious,0.965
+autokeras,F1 Malicious,0.9772151898734177
+autokeras,ROC-AUC,0.98609375
+autokeras,Average Precision,0.9876779176941495

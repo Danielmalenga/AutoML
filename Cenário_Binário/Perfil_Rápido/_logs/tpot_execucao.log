@@ -1,0 +1,42 @@
+
+Optimization Progress:   0%|          | 0/10 [00:00<?, ?pipeline/s]
+Optimization Progress:  10%|█         | 1/10 [00:00<00:01,  5.85pipeline/s]
+Optimization Progress:  20%|██        | 2/10 [00:02<00:11,  1.46s/pipeline]
+Optimization Progress:  30%|███       | 3/10 [00:03<00:07,  1.07s/pipeline]
+Optimization Progress:  40%|████      | 4/10 [00:04<00:06,  1.10s/pipeline]
+Optimization Progress:  50%|█████     | 5/10 [00:05<00:05,  1.15s/pipeline]
+Optimization Progress:  60%|██████    | 6/10 [00:07<00:05,  1.28s/pipeline]
+Optimization Progress:  70%|███████   | 7/10 [00:11<00:07,  2.46s/pipeline]
+Optimization Progress:  80%|████████  | 8/10 [00:15<00:05,  2.74s/pipeline]
+Optimization Progress:  90%|█████████ | 9/10 [00:24<00:04,  4.80s/pipeline]
+Optimization Progress: 100%|██████████| 10/10 [00:24<00:00,  3.35s/pipeline]
+Optimization Progress:  55%|█████▌    | 11/20 [00:26<00:25,  2.79s/pipeline]
+Optimization Progress:  60%|██████    | 12/20 [00:26<00:15,  1.98s/pipeline]
+Optimization Progress:  65%|██████▌   | 13/20 [00:27<00:12,  1.80s/pipeline]
+Optimization Progress:  70%|███████   | 14/20 [00:40<00:31,  5.17s/pipeline]
+Optimization Progress:  75%|███████▌  | 15/20 [00:42<00:20,  4.10s/pipeline]
+Optimization Progress:  80%|████████  | 16/20 [00:43<00:13,  3.29s/pipeline]
+Optimization Progress:  85%|████████▌ | 17/20 [00:43<00:07,  2.34s/pipeline]
+Optimization Progress:  90%|█████████ | 18/20 [00:57<00:11,  5.69s/pipeline]
+Optimization Progress:  95%|█████████▌| 19/20 [00:58<00:04,  4.20s/pipeline]
+Optimization Progress: 100%|██████████| 20/20 [00:58<00:00,  2.99s/pipeline]
+                                                                            
+Generation 1 - Current best internal CV score: 0.9896862432689295
+
+Optimization Progress: 100%|██████████| 20/20 [00:58<00:00,  2.99s/pipeline]
+Optimization Progress:  70%|███████   | 21/30 [00:59<00:23,  2.57s/pipeline]
+Optimization Progress:  73%|███████▎  | 22/30 [01:01<00:17,  2.21s/pipeline]
+Optimization Progress:  77%|███████▋  | 23/30 [01:04<00:17,  2.47s/pipeline]
+Optimization Progress:  80%|████████  | 24/30 [01:06<00:13,  2.32s/pipeline]
+Optimization Progress:  83%|████████▎ | 25/30 [01:09<00:12,  2.48s/pipeline]
+Optimization Progress:  87%|████████▋ | 26/30 [01:09<00:07,  1.77s/pipeline]
+Optimization Progress:  90%|█████████ | 27/30 [01:20<00:14,  4.71s/pipeline]
+Optimization Progress:  93%|█████████▎| 28/30 [01:21<00:07,  3.64s/pipeline]
+Optimization Progress:  97%|█████████▋| 29/30 [01:22<00:02,  2.61s/pipeline]
+Optimization Progress: 100%|██████████| 30/30 [01:34<00:00,  5.42s/pipeline]
+                                                                            
+Generation 2 - Current best internal CV score: 0.9896862432689295
+
+Optimization Progress: 100%|██████████| 30/30 [01:34<00:00,  5.42s/pipeline]
+                                                                            
+Best pipeline: RandomForestClassifier(PolynomialFeatures(input_matrix, degree=2, include_bias=False, interaction_only=False), bootstrap=True, criterion=entropy, max_features=0.05, min_samples_leaf=1, min_samples_split=16, n_estimators=100)

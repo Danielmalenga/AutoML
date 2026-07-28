@@ -1,0 +1,21 @@
+Requirement already satisfied: pip in ./micromamba/envs/ciciot_autosklearn/lib/python3.9/site-packages (25.2)
+Collecting pip
+  Downloading pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: wheel in ./micromamba/envs/ciciot_autosklearn/lib/python3.9/site-packages (0.45.1)
+Collecting wheel
+  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: packaging>=24.0 in ./micromamba/envs/ciciot_autosklearn/lib/python3.9/site-packages (from wheel) (26.2)
+Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 55.0 MB/s  0:00:00
+Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+Installing collected packages: wheel, pip
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.45.1
+    Uninstalling wheel-0.45.1:
+      Successfully uninstalled wheel-0.45.1
+  Attempting uninstall: pip
+    Found existing installation: pip 25.2
+    Uninstalling pip-25.2:
+      Successfully uninstalled pip-25.2
+
+Successfully installed pip-26.0.1 wheel-0.47.0

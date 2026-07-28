@@ -1,0 +1,6 @@
+/content/micromamba/envs/ciciot_autosklearn/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Python: 3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) 
+[GCC 13.3.0]
+Executável: /content/micromamba/envs/ciciot_autosklearn/bin/python
+Auto-sklearn: 0.15.0

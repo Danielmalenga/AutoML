@@ -1,0 +1,700 @@
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[ERROR] [2026-07-28 12:09:10,237:Client-AutoPyTorch:CICIoT2023_binario:42] Prediction for catboost failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 512, in eval_train_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 186, in fit_predict_and_loss
+    y_train_pred, y_opt_pred, y_valid_pred, y_test_pred = self._fit_and_predict(pipeline, split_id,
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 364, in _fit_and_predict
+    fit_and_suppress_warnings(self.logger, pipeline, X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 339, in fit_and_suppress_warnings
+    pipeline.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 111, in fit
+    return self.pipeline.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/base_pipeline.py", line 155, in fit
+    self.fit_estimator(X, y, **fit_params)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/base_pipeline.py", line 174, in fit_estimator
+    self._final_estimator.fit(X, y, **fit_params)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/base_choice.py", line 217, in fit
+    return self.choice.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/base_model.py", line 98, in fit
+    self.fit_output = self.model.fit(X['X_train'][X['train_indices']], X['y_train'][X['train_indices']],
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/traditional_learner/base_traditional_learner.py", line 182, in fit
+    self._prepare_model(X_train, y_train)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/traditional_learner/learners.py", line 127, in _prepare_model
+    self.config['eval_metric'] = AutoPyTorchToCatboostMetrics[self.metric.name].value
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/enum.py", line 387, in __getitem__
+    return cls._member_map_[name]
+KeyError: 'f1_macro'
+
+error: KeyError('f1_macro')
+configuration_origin: traditional
+[ERROR] [2026-07-28 12:19:29,027:Client-AutoPyTorch:RefitLogger:42] Prediction for Configuration(values={
+  'coalescer:__choice__': 'NoCoalescer',
+  'data_loader:batch_size': 190,
+  'encoder:__choice__': 'NoEncoder',
+  'feature_preprocessor:PCA:keep_variance': 0.6899271710129055,
+  'feature_preprocessor:PCA:whiten': False,
+  'feature_preprocessor:__choice__': 'PCA',
+  'imputer:numerical_strategy': 'mean',
+  'lr_scheduler:ReduceLROnPlateau:factor': 0.2059915620039457,
+  'lr_scheduler:ReduceLROnPlateau:mode': 'min',
+  'lr_scheduler:ReduceLROnPlateau:patience': 8,
+  'lr_scheduler:__choice__': 'ReduceLROnPlateau',
+  'network_backbone:ShapedMLPBackbone:activation': 'tanh',
+  'network_backbone:ShapedMLPBackbone:max_units': 609,
+  'network_backbone:ShapedMLPBackbone:mlp_shape': 'hexagon',
+  'network_backbone:ShapedMLPBackbone:num_groups': 2,
+  'network_backbone:ShapedMLPBackbone:output_dim': 216,
+  'network_backbone:ShapedMLPBackbone:use_dropout': False,
+  'network_backbone:__choice__': 'ShapedMLPBackbone',
+  'network_embedding:__choice__': 'NoEmbedding',
+  'network_head:__choice__': 'fully_connected',
+  'network_head:fully_connected:num_layers': 1,
+  'network_init:SparseInit:bias_strategy': 'Normal',
+  'network_init:__choice__': 'SparseInit',
+  'optimizer:AdamWOptimizer:beta1': 0.9049849436510105,
+  'optimizer:AdamWOptimizer:beta2': 0.9552872287159965,
+  'optimizer:AdamWOptimizer:lr': 0.030651104186151776,
+  'optimizer:AdamWOptimizer:weight_decay': 0.06897626258143057,
+  'optimizer:__choice__': 'AdamWOptimizer',
+  'scaler:__choice__': 'StandardScaler',
+  'trainer:StandardTrainer:weighted_loss': True,
+  'trainer:__choice__': 'StandardTrainer',
+})
+ failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/tabular_classification.py", line 177, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: Random Search
+[ERROR] [2026-07-28 12:19:45,319:Client-AutoPyTorch:RefitLogger:42] Prediction for Configuration(values={
+  'coalescer:__choice__': 'NoCoalescer',
+  'data_loader:batch_size': 190,
+  'encoder:__choice__': 'NoEncoder',
+  'feature_preprocessor:PCA:keep_variance': 0.6899271710129055,
+  'feature_preprocessor:PCA:whiten': False,
+  'feature_preprocessor:__choice__': 'PCA',
+  'imputer:numerical_strategy': 'mean',
+  'lr_scheduler:ReduceLROnPlateau:factor': 0.2059915620039457,
+  'lr_scheduler:ReduceLROnPlateau:mode': 'min',
+  'lr_scheduler:ReduceLROnPlateau:patience': 8,
+  'lr_scheduler:__choice__': 'ReduceLROnPlateau',
+  'network_backbone:ShapedMLPBackbone:activation': 'tanh',
+  'network_backbone:ShapedMLPBackbone:max_units': 609,
+  'network_backbone:ShapedMLPBackbone:mlp_shape': 'hexagon',
+  'network_backbone:ShapedMLPBackbone:num_groups': 2,
+  'network_backbone:ShapedMLPBackbone:output_dim': 216,
+  'network_backbone:ShapedMLPBackbone:use_dropout': False,
+  'network_backbone:__choice__': 'ShapedMLPBackbone',
+  'network_embedding:__choice__': 'NoEmbedding',
+  'network_head:__choice__': 'fully_connected',
+  'network_head:fully_connected:num_layers': 1,
+  'network_init:SparseInit:bias_strategy': 'Normal',
+  'network_init:__choice__': 'SparseInit',
+  'optimizer:AdamWOptimizer:beta1': 0.9049849436510105,
+  'optimizer:AdamWOptimizer:beta2': 0.9552872287159965,
+  'optimizer:AdamWOptimizer:lr': 0.030651104186151776,
+  'optimizer:AdamWOptimizer:weight_decay': 0.06897626258143057,
+  'optimizer:__choice__': 'AdamWOptimizer',
+  'scaler:__choice__': 'StandardScaler',
+  'trainer:StandardTrainer:weighted_loss': True,
+  'trainer:__choice__': 'StandardTrainer',
+})
+ failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/tabular_classification.py", line 177, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: Random Search
+[ERROR] [2026-07-28 12:19:47,884:Client-AutoPyTorch:RefitLogger:42] Prediction for random_forest failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 115, in predict_proba
+    return self.pipeline.predict_proba(X, batch_size=batch_size)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/traditional_tabular_classification.py", line 144, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: traditional
+[ERROR] [2026-07-28 12:19:49,858:Client-AutoPyTorch:RefitLogger:42] Prediction for extra_trees failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 115, in predict_proba
+    return self.pipeline.predict_proba(X, batch_size=batch_size)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/traditional_tabular_classification.py", line 144, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: traditional
+[ERROR] [2026-07-28 12:19:51,306:Client-AutoPyTorch:RefitLogger:42] Prediction for svm failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 115, in predict_proba
+    return self.pipeline.predict_proba(X, batch_size=batch_size)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/traditional_tabular_classification.py", line 144, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: traditional
+[ERROR] [2026-07-28 12:19:52,663:Client-AutoPyTorch:RefitLogger:42] Prediction for knn failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 115, in predict_proba
+    return self.pipeline.predict_proba(X, batch_size=batch_size)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/traditional_tabular_classification.py", line 144, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: traditional
+[ERROR] [2026-07-28 12:20:09,634:Client-AutoPyTorch:RefitLogger:42] Prediction for Configuration(values={
+  'coalescer:__choice__': 'NoCoalescer',
+  'data_loader:batch_size': 273,
+  'encoder:__choice__': 'NoEncoder',
+  'feature_preprocessor:Nystroem:coef0': 0.9167912033654357,
+  'feature_preprocessor:Nystroem:degree': 3,
+  'feature_preprocessor:Nystroem:gamma': 1.530461523771569,
+  'feature_preprocessor:Nystroem:kernel': 'poly',
+  'feature_preprocessor:Nystroem:n_components': 23,
+  'feature_preprocessor:__choice__': 'Nystroem',
+  'imputer:numerical_strategy': 'most_frequent',
+  'lr_scheduler:ExponentialLR:gamma': 0.8737531214099827,
+  'lr_scheduler:__choice__': 'ExponentialLR',
+  'network_backbone:ShapedMLPBackbone:activation': 'relu',
+  'network_backbone:ShapedMLPBackbone:max_dropout': 0.4826399305045108,
+  'network_backbone:ShapedMLPBackbone:max_units': 670,
+  'network_backbone:ShapedMLPBackbone:mlp_shape': 'brick',
+  'network_backbone:ShapedMLPBackbone:num_groups': 2,
+  'network_backbone:ShapedMLPBackbone:output_dim': 664,
+  'network_backbone:ShapedMLPBackbone:use_dropout': True,
+  'network_backbone:__choice__': 'ShapedMLPBackbone',
+  'network_embedding:__choice__': 'NoEmbedding',
+  'network_head:__choice__': 'fully_connected',
+  'network_head:fully_connected:num_layers': 1,
+  'network_init:NoInit:bias_strategy': 'Normal',
+  'network_init:__choice__': 'NoInit',
+  'optimizer:SGDOptimizer:lr': 0.006470700964403824,
+  'optimizer:SGDOptimizer:momentum': 0.27353250345492236,
+  'optimizer:SGDOptimizer:weight_decay': 0.05866528779323546,
+  'optimizer:__choice__': 'SGDOptimizer',
+  'scaler:__choice__': 'StandardScaler',
+  'trainer:StandardTrainer:weighted_loss': False,
+  'trainer:__choice__': 'StandardTrainer',
+})
+ failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 236, in eval_test_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 168, in fit_predict_and_loss
+    test_loss, test_pred = self.predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/test_evaluator.py", line 186, in predict_and_loss
+    preds = self.predict_function(
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 1009, in _predict_proba
+    Y_pred = pipeline.predict_proba(X, batch_size=1000)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/tabular_classification.py", line 177, in predict_proba
+    target = self.predict_proba(X[0:2].copy())
+TypeError: 'NoneType' object is not subscriptable
+
+error: TypeError("'NoneType' object is not subscriptable")
+configuration_origin: Random Search (sorted)
+[WARNING] [2026-07-28 12:20:21,815:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,835:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,836:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,837:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,837:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,838:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,839:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,845:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,848:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,881:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,881:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,882:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,883:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,883:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,884:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,885:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,888:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,889:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,903:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,906:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,908:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,909:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,910:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,912:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,913:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,915:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,918:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,919:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,921:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,924:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,925:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,927:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,930:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,931:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,933:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,935:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,937:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,938:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,940:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,941:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,944:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,945:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,947:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:21,948:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,043:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,044:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,045:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,045:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,046:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,047:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,047:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,051:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,051:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,063:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,063:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,064:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,065:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,066:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,068:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,068:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,070:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,070:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,072:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,073:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,074:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,075:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,076:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,078:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,079:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,080:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,082:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,084:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,085:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,086:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,087:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,089:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,090:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,091:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,092:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,094:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,096:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,096:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,098:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,098:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,100:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,101:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,102:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,104:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,105:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,107:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,107:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,109:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,109:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,111:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,113:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,114:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,115:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,116:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,117:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,119:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,120:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,121:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,122:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,124:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,125:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,126:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,128:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,128:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,130:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,131:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,132:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,133:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,134:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,136:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,137:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,138:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,140:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,140:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,141:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,445:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,445:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,446:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,447:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,447:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,448:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,449:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,452:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,452:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,476:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,476:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,477:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,477:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,478:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,479:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,479:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,483:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,483:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,493:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,493:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,494:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,496:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,497:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,498:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,499:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,501:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,502:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,503:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,504:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,506:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,507:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,508:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,509:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,512:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,514:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,519:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,522:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,525:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,527:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,529:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,602:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,602:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,603:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,604:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,604:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,605:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,605:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,609:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,609:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,619:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,620:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,621:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,622:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,623:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,624:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,625:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,626:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,627:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,629:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,630:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,631:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,632:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,633:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,634:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,635:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,636:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,637:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,638:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,640:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,640:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,641:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,642:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,644:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,644:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,646:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,647:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,649:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,650:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,652:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,654:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,655:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,657:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,658:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,660:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,662:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,664:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,665:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,666:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,667:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,668:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,670:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,671:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,672:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,673:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,674:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,675:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,676:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,677:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,679:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,680:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,682:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,683:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,855:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,856:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,857:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,860:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,864:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,871:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,874:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,876:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,877:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,878:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,878:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,894:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,895:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,896:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,896:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,897:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,898:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,898:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,911:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,911:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,912:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,914:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,915:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,915:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,965:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,970:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,971:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,972:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,972:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,977:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,978:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,979:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,979:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,980:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,980:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:22,981:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,053:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,054:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,055:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,057:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,058:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,058:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,119:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,125:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,130:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,131:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,133:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,134:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,137:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,141:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,141:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,142:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,143:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,143:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,144:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,144:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,145:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,146:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,153:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,154:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,154:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,155:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,156:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,156:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,157:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,158:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,159:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,160:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,162:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,164:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,165:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,167:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,429:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,429:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,430:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,432:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,435:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,438:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,439:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,441:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,442:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,442:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,443:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,456:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,456:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,469:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,469:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,470:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,472:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,473:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,473:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,534:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,539:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,540:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,540:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,541:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,548:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,548:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,549:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,550:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,607:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,607:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,608:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,610:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,611:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,611:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,674:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,677:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,681:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,682:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,684:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,685:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,688:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,691:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,692:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,693:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,693:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,694:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,695:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,696:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,696:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,697:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,705:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,705:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,706:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,707:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,708:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,710:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,711:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:23,712:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,036:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,037:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,038:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,039:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,040:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,041:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,042:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,048:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,049:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,066:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,067:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,068:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,069:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,070:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,071:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,071:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,078:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,078:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,084:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,084:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,087:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,088:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,090:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,092:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,093:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,094:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,095:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,096:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,098:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,126:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,127:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,128:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,128:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,129:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,129:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,130:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,134:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,134:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,137:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,138:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,138:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,140:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,141:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,142:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,143:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,145:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,146:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,147:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,148:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,150:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,152:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,153:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,154:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,156:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,157:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,159:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,160:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,162:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,164:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,166:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-28 12:20:24,167:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.

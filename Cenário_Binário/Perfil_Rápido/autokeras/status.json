@@ -1,0 +1,23 @@
+{
+  "framework": "autokeras",
+  "status": "success",
+  "inicio_epoch": 1785240198.776587,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_autokeras/bin/python",
+  "fim_epoch": 1785240293.8384542,
+  "duracao_segundos": 95.06186723709106,
+  "metricas": {
+    "Accuracy": 0.9775,
+    "Balanced Accuracy": 0.9775,
+    "Precision Macro": 0.9777986241400876,
+    "Recall Macro": 0.9775,
+    "Macro-F1": 0.9774964838255977,
+    "Weighted-F1": 0.9774964838255977,
+    "MCC": 0.9552985774654787,
+    "Precision Malicious": 0.9897435897435898,
+    "Recall Malicious": 0.965,
+    "F1 Malicious": 0.9772151898734177,
+    "ROC-AUC": 0.98609375,
+    "Average Precision": 0.9876779176941495
+  }
+}

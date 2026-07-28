@@ -1,0 +1,8 @@
+2026-07-28 12:03:08.099587: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Python: 3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]
+Executável: /content/micromamba/envs/ciciot_autokeras/bin/python
+TensorFlow: 2.20.0
+Keras: 3.15.0
+AutoKeras: 3.0.0
+GPU: True

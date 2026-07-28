@@ -1,0 +1,1141 @@
+Verbosity: 3 (Detailed Logging)
+	Failed to import torch or check CUDA availability!Please ensure you have the correct version of PyTorch installed by running `pip install -U torch`
+=================== System Info ===================
+AutoGluon Version:  1.5.0
+Python Version:     3.11.15
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP Thu Apr 30 18:17:14 UTC 2026
+CPU Count:          2
+Pytorch Version:    Can't import torch
+CUDA Version:       Can't get cuda version from torch
+GPU Count:          WARNING: Exception was raised when calculating GPU count (ModuleNotFoundError)
+Memory Avail:       10.88 GB / 12.67 GB (85.9%)
+Disk Space Avail:   2.65 GB / 15.00 GB (17.7%)
+	WARNING: Available disk space is low and there is a risk that AutoGluon will run out of disk during fit, causing an exception. 
+	We recommend a minimum available disk space of 10 GB, and large datasets may require more.
+===================================================
+Presets specified: ['best_quality']
+============ fit kwarg info ============
+User Specified kwargs:
+{'auto_stack': True}
+Full kwargs:
+{'_experimental_dynamic_hyperparameters': False,
+ '_feature_generator_kwargs': None,
+ '_save_bag_folds': None,
+ 'ag_args': None,
+ 'ag_args_ensemble': None,
+ 'ag_args_fit': None,
+ 'auto_stack': True,
+ 'calibrate': 'auto',
+ 'delay_bag_sets': False,
+ 'ds_args': {'clean_up_fits': True,
+             'detection_time_frac': 0.25,
+             'enable_callbacks': True,
+             'enable_ray_logging': True,
+             'holdout_data': None,
+             'holdout_frac': 0.1111111111111111,
+             'memory_safe_fits': 'auto',
+             'n_folds': 2,
+             'n_repeats': 1,
+             'validation_procedure': 'holdout'},
+ 'excluded_model_types': None,
+ 'feature_generator': 'auto',
+ 'feature_prune_kwargs': None,
+ 'holdout_frac': None,
+ 'hyperparameter_tune_kwargs': None,
+ 'included_model_types': None,
+ 'keep_only_best': False,
+ 'learning_curves': False,
+ 'name_suffix': None,
+ 'num_bag_folds': None,
+ 'num_bag_sets': None,
+ 'num_stack_levels': None,
+ 'pseudo_data': None,
+ 'raise_on_model_failure': False,
+ 'raise_on_no_models_fitted': True,
+ 'refit_full': False,
+ 'save_bag_folds': None,
+ 'save_space': False,
+ 'set_best_to_refit_full': False,
+ 'test_data': None,
+ 'unlabeled_data': None,
+ 'use_bag_holdout': False,
+ 'verbosity': 3}
+========================================
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 150s of the 600s of remaining time (25%).
+		Context path: "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho"
+Running DyStack sub-fit ...
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/predictor.pkl
+Beginning AutoGluon training ... Time limit = 150s
+AutoGluon will save models to "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho"
+Train Data Rows:    2844
+Train Data Columns: 37
+Label Column:       label_binary
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = Malicious, class 0 = Benign
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    11140.60 MB
+	Train Data (Original)  Memory Usage: 0.40 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 3 features to boolean dtype as they only contain 2 unique values.
+			Original Features (exact raw dtype, raw dtype):
+				('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+		Skipping CategoryFeatureGenerator: No input feature with required dtypes.
+		Skipping DatetimeFeatureGenerator: No input feature with required dtypes.
+		Skipping TextSpecialFeatureGenerator: No input feature with required dtypes.
+		Skipping TextNgramFeatureGenerator: No input feature with required dtypes.
+		Skipping IdentityFeatureGenerator: No input feature with required dtypes.
+		Skipping IsNanFeatureGenerator: No input feature with required dtypes.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+			2 duplicate columns removed: ['LLC', 'Tot size']
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			35 features in original data used to generate 35 features in processed data.
+	Unused Original Features (Count: 2): ['LLC', 'Tot size']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('float', []) : 2 | ['LLC', 'Tot size']
+	Types of features in original data (exact raw dtype, raw dtype):
+		('float32', 'float') : 35 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 35 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (exact raw dtype, raw dtype):
+		('float32', 'float') : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+		('int8', 'int')      :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+		('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+	0.1s = Fit runtime
+	35 features in original data used to generate 35 features in processed data.
+	Train Data (Processed) Memory Usage: 0.36 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.09s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'f1_macro'
+	To change this, specify the eval_metric parameter of Predictor()
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{}],
+	'XGB': [{}],
+	'RF': [{}],
+	'XT': [{}],
+}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/utils/data/X.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/utils/data/y.pkl
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Model configs that will be trained (in order):
+	LightGBM_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 99.91s of the 149.90s of remaining time.
+	Fitting LightGBM_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/model_template.pkl
+Will use sequential fold fitting strategy because import of ray failed. Reason: ray is required to train folds in parallel for TabularPredictor or HPO for MultiModalPredictor. A quick tip is to install via `pip install "ray>=2.43.0,<2.53.0"`
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0713318	valid_set's f1_macro: 0.985952
+[100]	valid_set's binary_logloss: 0.036515	valid_set's f1_macro: 0.988763
+[150]	valid_set's binary_logloss: 0.0349802	valid_set's f1_macro: 0.988763
+[200]	valid_set's binary_logloss: 0.0443157	valid_set's f1_macro: 0.985954
+[250]	valid_set's binary_logloss: 0.0633388	valid_set's f1_macro: 0.985954
+[300]	valid_set's binary_logloss: 0.071177	valid_set's f1_macro: 0.985954
+[350]	valid_set's binary_logloss: 0.0726582	valid_set's f1_macro: 0.985954
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0610907	valid_set's f1_macro: 0.994382
+[100]	valid_set's binary_logloss: 0.0192023	valid_set's f1_macro: 0.994382
+[150]	valid_set's binary_logloss: 0.0168597	valid_set's f1_macro: 0.997191
+[200]	valid_set's binary_logloss: 0.0202377	valid_set's f1_macro: 0.997191
+[250]	valid_set's binary_logloss: 0.0240349	valid_set's f1_macro: 0.997191
+[300]	valid_set's binary_logloss: 0.0276072	valid_set's f1_macro: 0.997191
+[350]	valid_set's binary_logloss: 0.0301773	valid_set's f1_macro: 0.997191
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0865545	valid_set's f1_macro: 0.983144
+[100]	valid_set's binary_logloss: 0.044546	valid_set's f1_macro: 0.985955
+[150]	valid_set's binary_logloss: 0.0477269	valid_set's f1_macro: 0.985955
+[200]	valid_set's binary_logloss: 0.0623308	valid_set's f1_macro: 0.988764
+[250]	valid_set's binary_logloss: 0.0761405	valid_set's f1_macro: 0.985955
+[300]	valid_set's binary_logloss: 0.0902921	valid_set's f1_macro: 0.985955
+[350]	valid_set's binary_logloss: 0.100358	valid_set's f1_macro: 0.988764
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0834943	valid_set's f1_macro: 0.983144
+[100]	valid_set's binary_logloss: 0.0504193	valid_set's f1_macro: 0.985952
+[150]	valid_set's binary_logloss: 0.0543722	valid_set's f1_macro: 0.985952
+[200]	valid_set's binary_logloss: 0.0634366	valid_set's f1_macro: 0.988763
+[250]	valid_set's binary_logloss: 0.0769135	valid_set's f1_macro: 0.988763
+[300]	valid_set's binary_logloss: 0.0890929	valid_set's f1_macro: 0.988763
+[350]	valid_set's binary_logloss: 0.095566	valid_set's f1_macro: 0.988763
+[400]	valid_set's binary_logloss: 0.0986171	valid_set's f1_macro: 0.988763
+[450]	valid_set's binary_logloss: 0.0993063	valid_set's f1_macro: 0.988763
+[500]	valid_set's binary_logloss: 0.0993647	valid_set's f1_macro: 0.988763
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0719699	valid_set's f1_macro: 0.985914
+[100]	valid_set's binary_logloss: 0.03743	valid_set's f1_macro: 0.988732
+[150]	valid_set's binary_logloss: 0.0424108	valid_set's f1_macro: 0.988732
+[200]	valid_set's binary_logloss: 0.0526729	valid_set's f1_macro: 0.988732
+[250]	valid_set's binary_logloss: 0.0621317	valid_set's f1_macro: 0.991549
+[300]	valid_set's binary_logloss: 0.0684816	valid_set's f1_macro: 0.991549
+[350]	valid_set's binary_logloss: 0.0690666	valid_set's f1_macro: 0.991549
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0681367	valid_set's f1_macro: 0.988732
+[100]	valid_set's binary_logloss: 0.0246095	valid_set's f1_macro: 0.994366
+[150]	valid_set's binary_logloss: 0.0252625	valid_set's f1_macro: 0.994366
+[200]	valid_set's binary_logloss: 0.0288361	valid_set's f1_macro: 0.994366
+[250]	valid_set's binary_logloss: 0.0354351	valid_set's f1_macro: 0.994366
+[300]	valid_set's binary_logloss: 0.0405549	valid_set's f1_macro: 0.994366
+[350]	valid_set's binary_logloss: 0.0432123	valid_set's f1_macro: 0.994366
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0659342	valid_set's f1_macro: 0.991548
+[100]	valid_set's binary_logloss: 0.030947	valid_set's f1_macro: 0.991548
+[150]	valid_set's binary_logloss: 0.036368	valid_set's f1_macro: 0.994366
+[200]	valid_set's binary_logloss: 0.0510188	valid_set's f1_macro: 0.991548
+[250]	valid_set's binary_logloss: 0.0633659	valid_set's f1_macro: 0.991548
+[300]	valid_set's binary_logloss: 0.0737284	valid_set's f1_macro: 0.991548
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0706979	valid_set's f1_macro: 0.98873
+[100]	valid_set's binary_logloss: 0.0312744	valid_set's f1_macro: 0.991548
+[150]	valid_set's binary_logloss: 0.0353913	valid_set's f1_macro: 0.98873
+[200]	valid_set's binary_logloss: 0.0477192	valid_set's f1_macro: 0.98873
+[250]	valid_set's binary_logloss: 0.0565712	valid_set's f1_macro: 0.98873
+[300]	valid_set's binary_logloss: 0.0683445	valid_set's f1_macro: 0.98873
+[350]	valid_set's binary_logloss: 0.0772021	valid_set's f1_macro: 0.98873
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/model.pkl
+	0.9923	 = Validation score   (f1_macro)
+	15.53s	 = Training   runtime
+	0.03s	 = Validation runtime
+	14231.0	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: RandomForest_BAG_L1 ... Training model for up to 83.98s of the 133.97s of remaining time.
+	Fitting RandomForest_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.9 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/model.pkl
+	0.9902	 = Validation score   (f1_macro)
+	1.4s	 = Training   runtime
+	0.2s	 = Validation runtime
+	14533.4	 = Inference  throughput (rows/s | 2844 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: ExtraTrees_BAG_L1 ... Training model for up to 82.23s of the 132.22s of remaining time.
+	Fitting ExtraTrees_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.8 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/model.pkl
+	0.9884	 = Validation score   (f1_macro)
+	1.15s	 = Training   runtime
+	0.19s	 = Validation runtime
+	15018.5	 = Inference  throughput (rows/s | 2844 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 80.74s of the 130.73s of remaining time.
+	Fitting XGBoost_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+[0]	validation_0-logloss:0.60350	validation_0-_f1_macro:-0.98314
+[50]	validation_0-logloss:0.04526	validation_0-_f1_macro:-0.98595
+[100]	validation_0-logloss:0.04956	validation_0-_f1_macro:-0.98314
+[150]	validation_0-logloss:0.05537	validation_0-_f1_macro:-0.98595
+[200]	validation_0-logloss:0.05850	validation_0-_f1_macro:-0.98595
+[250]	validation_0-logloss:0.05942	validation_0-_f1_macro:-0.98595
+[300]	validation_0-logloss:0.06059	validation_0-_f1_macro:-0.98595
+[340]	validation_0-logloss:0.06144	validation_0-_f1_macro:-0.98595
+[0]	validation_0-logloss:0.60131	validation_0-_f1_macro:-0.99438
+[50]	validation_0-logloss:0.02407	validation_0-_f1_macro:-0.99719
+[100]	validation_0-logloss:0.02119	validation_0-_f1_macro:-0.99719
+[150]	validation_0-logloss:0.02155	validation_0-_f1_macro:-0.99719
+[200]	validation_0-logloss:0.02088	validation_0-_f1_macro:-0.99719
+[250]	validation_0-logloss:0.02054	validation_0-_f1_macro:-0.99438
+[300]	validation_0-logloss:0.02089	validation_0-_f1_macro:-0.99719
+[344]	validation_0-logloss:0.02101	validation_0-_f1_macro:-0.99438
+[0]	validation_0-logloss:0.60184	validation_0-_f1_macro:-0.99157
+[50]	validation_0-logloss:0.05506	validation_0-_f1_macro:-0.98876
+[100]	validation_0-logloss:0.05807	validation_0-_f1_macro:-0.98315
+[150]	validation_0-logloss:0.06289	validation_0-_f1_macro:-0.98315
+[200]	validation_0-logloss:0.06570	validation_0-_f1_macro:-0.98596
+[250]	validation_0-logloss:0.06703	validation_0-_f1_macro:-0.98876
+[300]	validation_0-logloss:0.06816	validation_0-_f1_macro:-0.98876
+[0]	validation_0-logloss:0.60154	validation_0-_f1_macro:-0.99438
+[50]	validation_0-logloss:0.05148	validation_0-_f1_macro:-0.98314
+[100]	validation_0-logloss:0.05617	validation_0-_f1_macro:-0.98314
+[150]	validation_0-logloss:0.06009	validation_0-_f1_macro:-0.98595
+[200]	validation_0-logloss:0.06189	validation_0-_f1_macro:-0.98595
+[250]	validation_0-logloss:0.06263	validation_0-_f1_macro:-0.98595
+[300]	validation_0-logloss:0.06255	validation_0-_f1_macro:-0.98595
+[0]	validation_0-logloss:0.60180	validation_0-_f1_macro:-0.99155
+[50]	validation_0-logloss:0.03352	validation_0-_f1_macro:-0.99437
+[100]	validation_0-logloss:0.03726	validation_0-_f1_macro:-0.99437
+[150]	validation_0-logloss:0.04141	validation_0-_f1_macro:-0.98873
+[200]	validation_0-logloss:0.04231	validation_0-_f1_macro:-0.99155
+[250]	validation_0-logloss:0.04319	validation_0-_f1_macro:-0.99155
+[300]	validation_0-logloss:0.04402	validation_0-_f1_macro:-0.99155
+[340]	validation_0-logloss:0.04436	validation_0-_f1_macro:-0.99155
+[0]	validation_0-logloss:0.60269	validation_0-_f1_macro:-0.98873
+[50]	validation_0-logloss:0.03096	validation_0-_f1_macro:-0.99437
+[100]	validation_0-logloss:0.02567	validation_0-_f1_macro:-0.99437
+[150]	validation_0-logloss:0.02896	validation_0-_f1_macro:-0.99437
+[200]	validation_0-logloss:0.02920	validation_0-_f1_macro:-0.99437
+[250]	validation_0-logloss:0.02932	validation_0-_f1_macro:-0.99437
+[300]	validation_0-logloss:0.02888	validation_0-_f1_macro:-0.99437
+[339]	validation_0-logloss:0.02944	validation_0-_f1_macro:-0.99437
+[0]	validation_0-logloss:0.60195	validation_0-_f1_macro:-0.98873
+[50]	validation_0-logloss:0.03495	validation_0-_f1_macro:-0.98873
+[100]	validation_0-logloss:0.03804	validation_0-_f1_macro:-0.98873
+[150]	validation_0-logloss:0.04280	validation_0-_f1_macro:-0.98873
+[200]	validation_0-logloss:0.04321	validation_0-_f1_macro:-0.98873
+[250]	validation_0-logloss:0.04396	validation_0-_f1_macro:-0.98873
+[300]	validation_0-logloss:0.04402	validation_0-_f1_macro:-0.98873
+[0]	validation_0-logloss:0.60169	validation_0-_f1_macro:-0.99155
+[50]	validation_0-logloss:0.03654	validation_0-_f1_macro:-0.98873
+[100]	validation_0-logloss:0.03671	validation_0-_f1_macro:-0.98873
+[150]	validation_0-logloss:0.04005	validation_0-_f1_macro:-0.98873
+[200]	validation_0-logloss:0.04078	validation_0-_f1_macro:-0.98873
+[250]	validation_0-logloss:0.04138	validation_0-_f1_macro:-0.98873
+[300]	validation_0-logloss:0.04255	validation_0-_f1_macro:-0.98873
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/model.pkl
+	0.9923	 = Validation score   (f1_macro)
+	18.72s	 = Training   runtime
+	0.03s	 = Validation runtime
+	12579.3	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 149.91s of the 111.57s of remaining time.
+	Fitting WeightedEnsemble_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+Ensemble size: 18
+Ensemble weights: 
+[0.94444444 0.         0.         0.05555556]
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L1': 0.944, 'XGBoost_BAG_L1': 0.056}
+	0.9926	 = Validation score   (f1_macro)
+	0.36s	 = Training   runtime
+	0.0s	 = Validation runtime
+	6610.0	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Model configs that will be trained (in order):
+	LightGBM_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L2 models, fit_strategy="sequential" ...
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/oof.pkl
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 111.11s of the 111.09s of remaining time.
+	Fitting LightGBM_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0552315	valid_set's f1_macro: 0.997191
+[100]	valid_set's binary_logloss: 0.0207792	valid_set's f1_macro: 0.997191
+[150]	valid_set's binary_logloss: 0.021168	valid_set's f1_macro: 0.997191
+[200]	valid_set's binary_logloss: 0.0264046	valid_set's f1_macro: 0.997191
+[250]	valid_set's binary_logloss: 0.0325793	valid_set's f1_macro: 0.997191
+[300]	valid_set's binary_logloss: 0.0377049	valid_set's f1_macro: 0.997191
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0626144	valid_set's f1_macro: 0.994382
+[100]	valid_set's binary_logloss: 0.0303136	valid_set's f1_macro: 0.994382
+[150]	valid_set's binary_logloss: 0.0362692	valid_set's f1_macro: 0.994382
+[200]	valid_set's binary_logloss: 0.0482275	valid_set's f1_macro: 0.994382
+[250]	valid_set's binary_logloss: 0.0599077	valid_set's f1_macro: 0.994382
+[300]	valid_set's binary_logloss: 0.0709629	valid_set's f1_macro: 0.994382
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0682563	valid_set's f1_macro: 0.991572
+[100]	valid_set's binary_logloss: 0.0460571	valid_set's f1_macro: 0.991572
+[150]	valid_set's binary_logloss: 0.0576746	valid_set's f1_macro: 0.991572
+[200]	valid_set's binary_logloss: 0.0729863	valid_set's f1_macro: 0.991572
+[250]	valid_set's binary_logloss: 0.0898709	valid_set's f1_macro: 0.991572
+[300]	valid_set's binary_logloss: 0.102394	valid_set's f1_macro: 0.991572
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.04935	valid_set's f1_macro: 1
+[100]	valid_set's binary_logloss: 0.00766252	valid_set's f1_macro: 1
+[150]	valid_set's binary_logloss: 0.00216398	valid_set's f1_macro: 1
+[200]	valid_set's binary_logloss: 0.000873219	valid_set's f1_macro: 1
+[250]	valid_set's binary_logloss: 0.000487191	valid_set's f1_macro: 1
+[300]	valid_set's binary_logloss: 0.000367612	valid_set's f1_macro: 1
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0686187	valid_set's f1_macro: 0.991549
+[100]	valid_set's binary_logloss: 0.0427377	valid_set's f1_macro: 0.991549
+[150]	valid_set's binary_logloss: 0.0459497	valid_set's f1_macro: 0.991549
+[200]	valid_set's binary_logloss: 0.0554077	valid_set's f1_macro: 0.991549
+[250]	valid_set's binary_logloss: 0.0711376	valid_set's f1_macro: 0.991549
+[300]	valid_set's binary_logloss: 0.083003	valid_set's f1_macro: 0.991549
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0723489	valid_set's f1_macro: 0.988732
+[100]	valid_set's binary_logloss: 0.0414308	valid_set's f1_macro: 0.988732
+[150]	valid_set's binary_logloss: 0.0487316	valid_set's f1_macro: 0.988732
+[200]	valid_set's binary_logloss: 0.061655	valid_set's f1_macro: 0.988732
+[250]	valid_set's binary_logloss: 0.0757529	valid_set's f1_macro: 0.988732
+[300]	valid_set's binary_logloss: 0.0895094	valid_set's f1_macro: 0.988732
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0834805	valid_set's f1_macro: 0.985914
+[100]	valid_set's binary_logloss: 0.0716351	valid_set's f1_macro: 0.980281
+[150]	valid_set's binary_logloss: 0.0923489	valid_set's f1_macro: 0.980279
+[200]	valid_set's binary_logloss: 0.118668	valid_set's f1_macro: 0.980279
+[250]	valid_set's binary_logloss: 0.150317	valid_set's f1_macro: 0.980279
+[300]	valid_set's binary_logloss: 0.170814	valid_set's f1_macro: 0.980279
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0636243	valid_set's f1_macro: 0.994366
+[100]	valid_set's binary_logloss: 0.0378365	valid_set's f1_macro: 0.994366
+[150]	valid_set's binary_logloss: 0.0442914	valid_set's f1_macro: 0.991548
+[200]	valid_set's binary_logloss: 0.0530115	valid_set's f1_macro: 0.991548
+[250]	valid_set's binary_logloss: 0.0640014	valid_set's f1_macro: 0.991548
+[300]	valid_set's binary_logloss: 0.0754024	valid_set's f1_macro: 0.991548
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/model.pkl
+	0.993	 = Validation score   (f1_macro)
+	13.51s	 = Training   runtime
+	0.01s	 = Validation runtime
+	3191.3	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: RandomForest_BAG_L2 ... Training model for up to 97.25s of the 97.23s of remaining time.
+	Fitting RandomForest_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/model.pkl
+	0.9926	 = Validation score   (f1_macro)
+	1.21s	 = Training   runtime
+	0.2s	 = Validation runtime
+	2818.5	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: ExtraTrees_BAG_L2 ... Training model for up to 95.70s of the 95.68s of remaining time.
+	Fitting ExtraTrees_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/model.pkl
+	0.9919	 = Validation score   (f1_macro)
+	1.1s	 = Training   runtime
+	0.33s	 = Validation runtime
+	2484.2	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 94.14s of the 94.12s of remaining time.
+	Fitting XGBoost_BAG_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+[0]	validation_0-logloss:0.60069	validation_0-_f1_macro:-0.99438
+[50]	validation_0-logloss:0.01967	validation_0-_f1_macro:-0.99719
+[100]	validation_0-logloss:0.01877	validation_0-_f1_macro:-0.99719
+[150]	validation_0-logloss:0.02006	validation_0-_f1_macro:-0.99719
+[200]	validation_0-logloss:0.02041	validation_0-_f1_macro:-0.99719
+[250]	validation_0-logloss:0.02107	validation_0-_f1_macro:-0.99719
+[300]	validation_0-logloss:0.02149	validation_0-_f1_macro:-0.99719
+[302]	validation_0-logloss:0.02149	validation_0-_f1_macro:-0.99719
+[0]	validation_0-logloss:0.60091	validation_0-_f1_macro:-0.99157
+[50]	validation_0-logloss:0.03454	validation_0-_f1_macro:-0.99157
+[100]	validation_0-logloss:0.03458	validation_0-_f1_macro:-0.99157
+[150]	validation_0-logloss:0.03542	validation_0-_f1_macro:-0.99157
+[200]	validation_0-logloss:0.03657	validation_0-_f1_macro:-0.99157
+[250]	validation_0-logloss:0.03685	validation_0-_f1_macro:-0.99157
+[300]	validation_0-logloss:0.03806	validation_0-_f1_macro:-0.99157
+[0]	validation_0-logloss:0.60168	validation_0-_f1_macro:-0.99157
+[50]	validation_0-logloss:0.04193	validation_0-_f1_macro:-0.99157
+[100]	validation_0-logloss:0.04454	validation_0-_f1_macro:-0.99157
+[150]	validation_0-logloss:0.04681	validation_0-_f1_macro:-0.99157
+[200]	validation_0-logloss:0.04918	validation_0-_f1_macro:-0.99157
+[250]	validation_0-logloss:0.05135	validation_0-_f1_macro:-0.99157
+[300]	validation_0-logloss:0.05308	validation_0-_f1_macro:-0.99157
+[0]	validation_0-logloss:0.59999	validation_0-_f1_macro:-1.00000
+[50]	validation_0-logloss:0.01137	validation_0-_f1_macro:-1.00000
+[100]	validation_0-logloss:0.00595	validation_0-_f1_macro:-1.00000
+[150]	validation_0-logloss:0.00571	validation_0-_f1_macro:-1.00000
+[200]	validation_0-logloss:0.00637	validation_0-_f1_macro:-1.00000
+[250]	validation_0-logloss:0.00671	validation_0-_f1_macro:-1.00000
+[300]	validation_0-logloss:0.00703	validation_0-_f1_macro:-0.99719
+[0]	validation_0-logloss:0.60216	validation_0-_f1_macro:-0.99155
+[50]	validation_0-logloss:0.04367	validation_0-_f1_macro:-0.99155
+[100]	validation_0-logloss:0.04840	validation_0-_f1_macro:-0.99155
+[150]	validation_0-logloss:0.05068	validation_0-_f1_macro:-0.99155
+[200]	validation_0-logloss:0.05374	validation_0-_f1_macro:-0.99155
+[250]	validation_0-logloss:0.05461	validation_0-_f1_macro:-0.99155
+[300]	validation_0-logloss:0.05550	validation_0-_f1_macro:-0.99155
+[0]	validation_0-logloss:0.60223	validation_0-_f1_macro:-0.98310
+[50]	validation_0-logloss:0.04718	validation_0-_f1_macro:-0.98873
+[100]	validation_0-logloss:0.05142	validation_0-_f1_macro:-0.98873
+[150]	validation_0-logloss:0.05277	validation_0-_f1_macro:-0.98873
+[200]	validation_0-logloss:0.05385	validation_0-_f1_macro:-0.98873
+[250]	validation_0-logloss:0.05441	validation_0-_f1_macro:-0.98873
+[300]	validation_0-logloss:0.05513	validation_0-_f1_macro:-0.98873
+[315]	validation_0-logloss:0.05532	validation_0-_f1_macro:-0.98873
+[0]	validation_0-logloss:0.60274	validation_0-_f1_macro:-0.98310
+[50]	validation_0-logloss:0.05939	validation_0-_f1_macro:-0.98591
+[100]	validation_0-logloss:0.06851	validation_0-_f1_macro:-0.98873
+[150]	validation_0-logloss:0.07491	validation_0-_f1_macro:-0.98873
+[200]	validation_0-logloss:0.07799	validation_0-_f1_macro:-0.98873
+[250]	validation_0-logloss:0.08000	validation_0-_f1_macro:-0.98873
+[300]	validation_0-logloss:0.08178	validation_0-_f1_macro:-0.98873
+[350]	validation_0-logloss:0.08286	validation_0-_f1_macro:-0.98873
+[359]	validation_0-logloss:0.08289	validation_0-_f1_macro:-0.98873
+[0]	validation_0-logloss:0.60107	validation_0-_f1_macro:-0.99155
+[50]	validation_0-logloss:0.03421	validation_0-_f1_macro:-0.99437
+[100]	validation_0-logloss:0.03872	validation_0-_f1_macro:-0.99437
+[150]	validation_0-logloss:0.04198	validation_0-_f1_macro:-0.99437
+[200]	validation_0-logloss:0.04381	validation_0-_f1_macro:-0.99437
+[250]	validation_0-logloss:0.04476	validation_0-_f1_macro:-0.99437
+[300]	validation_0-logloss:0.04556	validation_0-_f1_macro:-0.99437
+[302]	validation_0-logloss:0.04561	validation_0-_f1_macro:-0.99437
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/model.pkl
+	0.993	 = Validation score   (f1_macro)
+	18.75s	 = Training   runtime
+	0.03s	 = Validation runtime
+	2743.3	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L3: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 149.91s of the 74.88s of remaining time.
+	Fitting WeightedEnsemble_L3 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+Ensemble size: 1
+Ensemble weights: 
+[0. 0. 0. 0. 1. 0. 0. 0.]
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L2': 1.0}
+	0.993	 = Validation score   (f1_macro)
+	0.75s	 = Training   runtime
+	0.01s	 = Validation runtime
+	3173.1	 = Inference  throughput (rows/s | 356 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+AutoGluon training complete, total runtime = 76.04s ... Best model: WeightedEnsemble_L3 | Estimated inference throughput: 3173.1 rows/s (356 batch size)
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/utils/data/y.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/utils/oof.pkl
+Calibrating decision threshold to optimize metric f1_macro | Checking 51 thresholds...
+	threshold: 0.500	| val: 0.9930	| NEW BEST
+	threshold: 0.480	| val: 0.9757
+	threshold: 0.520	| val: 0.9912
+	threshold: 0.460	| val: 0.7263
+	threshold: 0.540	| val: 0.7262
+	threshold: 0.440	| val: 0.6506
+	threshold: 0.560	| val: 0.6480
+	threshold: 0.420	| val: 0.6506
+	threshold: 0.580	| val: 0.6480
+	threshold: 0.400	| val: 0.6506
+	threshold: 0.600	| val: 0.6480
+	threshold: 0.380	| val: 0.6506
+	threshold: 0.620	| val: 0.6480
+	threshold: 0.360	| val: 0.6506
+	threshold: 0.640	| val: 0.6483
+	threshold: 0.340	| val: 0.6492
+	threshold: 0.660	| val: 0.6483
+	threshold: 0.320	| val: 0.6492
+	threshold: 0.680	| val: 0.6483
+	threshold: 0.300	| val: 0.6478
+	threshold: 0.700	| val: 0.6478
+	threshold: 0.280	| val: 0.6469
+	threshold: 0.720	| val: 0.6478
+	threshold: 0.260	| val: 0.6446
+	threshold: 0.740	| val: 0.6478
+	threshold: 0.240	| val: 0.6406
+	threshold: 0.760	| val: 0.6478
+	threshold: 0.220	| val: 0.6297
+	threshold: 0.780	| val: 0.6478
+	threshold: 0.200	| val: 0.5368
+	threshold: 0.800	| val: 0.5601
+	threshold: 0.180	| val: 0.4479
+	threshold: 0.820	| val: 0.4559
+	threshold: 0.160	| val: 0.4407
+	threshold: 0.840	| val: 0.4559
+	threshold: 0.140	| val: 0.3349
+	threshold: 0.860	| val: 0.3341
+	threshold: 0.120	| val: 0.3333
+	threshold: 0.880	| val: 0.3333
+	threshold: 0.100	| val: 0.3333
+	threshold: 0.900	| val: 0.3333
+	threshold: 0.080	| val: 0.3333
+	threshold: 0.920	| val: 0.3333
+	threshold: 0.060	| val: 0.3333
+	threshold: 0.940	| val: 0.3333
+	threshold: 0.040	| val: 0.3333
+	threshold: 0.960	| val: 0.3333
+	threshold: 0.020	| val: 0.3333
+	threshold: 0.980	| val: 0.3333
+	threshold: 0.000	| val: 0.3333
+	threshold: 1.000	| val: 0.3333
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	threshold: 0.501	| val: 0.9930
+	threshold: 0.502	| val: 0.9930
+	threshold: 0.503	| val: 0.9926
+	threshold: 0.504	| val: 0.9923
+	threshold: 0.505	| val: 0.9923
+	threshold: 0.506	| val: 0.9916
+	threshold: 0.507	| val: 0.9916
+	threshold: 0.508	| val: 0.9912
+	threshold: 0.509	| val: 0.9912
+	threshold: 0.510	| val: 0.9912
+	threshold: 0.511	| val: 0.9912
+	threshold: 0.512	| val: 0.9912
+	threshold: 0.513	| val: 0.9912
+	threshold: 0.514	| val: 0.9912
+	threshold: 0.515	| val: 0.9912
+	threshold: 0.516	| val: 0.9912
+	threshold: 0.517	| val: 0.9912
+	threshold: 0.518	| val: 0.9912
+	threshold: 0.519	| val: 0.9912
+	threshold: 0.499	| val: 0.9930
+	threshold: 0.498	| val: 0.9930
+	threshold: 0.497	| val: 0.9930
+	threshold: 0.496	| val: 0.9930
+	threshold: 0.495	| val: 0.9930
+	threshold: 0.494	| val: 0.9930
+	threshold: 0.493	| val: 0.9930
+	threshold: 0.492	| val: 0.9930
+	threshold: 0.491	| val: 0.9926
+	threshold: 0.490	| val: 0.9926
+	threshold: 0.489	| val: 0.9926
+	threshold: 0.488	| val: 0.9895
+	threshold: 0.487	| val: 0.9884
+	threshold: 0.486	| val: 0.9884
+	threshold: 0.485	| val: 0.9884
+	threshold: 0.484	| val: 0.9856
+	threshold: 0.483	| val: 0.9852
+	threshold: 0.482	| val: 0.9852
+	threshold: 0.481	| val: 0.9817
+	Base Threshold: 0.500	| val: 0.9930
+	Best Threshold: 0.500	| val: 0.9930
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/predictor.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/version.txt with contents "1.5.0"
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/metadata.json
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho")
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/LightGBM_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/RandomForest_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/ExtraTrees_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/XGBoost_BAG_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/ds_sub_fit/sub_fit_ho/models/WeightedEnsemble_L3/model.pkl
+Deleting DyStack predictor artifacts (clean_up_fits=True) ...
+Leaderboard on holdout data (DyStack):
+                 model  score_holdout  score_val eval_metric  pred_time_test  pred_time_val   fit_time  pred_time_test_marginal  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+0      LightGBM_BAG_L1       0.991572   0.992264    f1_macro        0.105672       0.025016  15.527519                 0.105672                0.025016          15.527519            1       True          1
+1    ExtraTrees_BAG_L1       0.991572   0.988395    f1_macro        0.118497       0.189367   1.153771                 0.118497                0.189367           1.153771            1       True          3
+2  RandomForest_BAG_L1       0.991572   0.990154    f1_macro        0.157748       0.195687   1.397905                 0.157748                0.195687           1.397905            1       True          2
+3       XGBoost_BAG_L1       0.991572   0.992264    f1_macro        0.167249       0.028301  18.716562                 0.167249                0.028301          18.716562            1       True          4
+4  WeightedEnsemble_L2       0.991572   0.992616    f1_macro        0.279410       0.057644  34.607931                 0.006489                0.004328           0.363850            2       True          5
+5      LightGBM_BAG_L2       0.991572   0.992967    f1_macro        0.594043       0.448408  50.307946                 0.044876                0.010037          13.512190            2       True          6
+6  WeightedEnsemble_L3       0.991572   0.992967    f1_macro        0.600506       0.453535  51.054461                 0.006463                0.005127           0.746515            3       True         10
+7  RandomForest_BAG_L2       0.991572   0.992616    f1_macro        0.671157       0.636423  38.004831                 0.121990                0.198052           1.209074            2       True          7
+8    ExtraTrees_BAG_L2       0.991572   0.991912    f1_macro        0.673947       0.772224  37.895275                 0.124780                0.333854           1.099519            2       True          8
+9       XGBoost_BAG_L2       0.991572   0.992967    f1_macro        0.743972       0.466623  55.549037                 0.194806                0.028253          18.753280            2       True          9
+	0	 = Optimal   num_stack_levels (Stacked Overfitting Occurred: True)
+	78s	 = DyStack   runtime |	522s	 = Remaining runtime
+Starting main fit with num_stack_levels=0.
+	For future fit calls on this dataset, you can skip DyStack to save time: `predictor.fit(..., dynamic_stacking=False, num_stack_levels=0)`
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/predictor.pkl
+Beginning AutoGluon training ... Time limit = 522s
+AutoGluon will save models to "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon"
+Train Data Rows:    3200
+Train Data Columns: 37
+Label Column:       label_binary
+Problem Type:       binary
+Preprocessing data ...
+Selected class <--> label mapping:  class 1 = Malicious, class 0 = Benign
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    10942.31 MB
+	Train Data (Original)  Memory Usage: 0.45 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+			Note: Converting 3 features to boolean dtype as they only contain 2 unique values.
+			Original Features (exact raw dtype, raw dtype):
+				('float32', 'float') : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in original data (raw dtype, special dtypes):
+				('float', []) : 37 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+		Skipping CategoryFeatureGenerator: No input feature with required dtypes.
+		Skipping DatetimeFeatureGenerator: No input feature with required dtypes.
+		Skipping TextSpecialFeatureGenerator: No input feature with required dtypes.
+		Skipping TextNgramFeatureGenerator: No input feature with required dtypes.
+		Skipping IdentityFeatureGenerator: No input feature with required dtypes.
+		Skipping IsNanFeatureGenerator: No input feature with required dtypes.
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 34 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			37 features in original data used to generate 37 features in processed data.
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+			2 duplicate columns removed: ['LLC', 'Tot size']
+			Types of features in original data (raw dtype, special dtypes):
+				('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			Types of features in processed data (raw dtype, special dtypes):
+				('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+				('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+			0.0s = Fit runtime
+			35 features in original data used to generate 35 features in processed data.
+	Unused Original Features (Count: 2): ['LLC', 'Tot size']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('float', []) : 2 | ['LLC', 'Tot size']
+	Types of features in original data (exact raw dtype, raw dtype):
+		('float32', 'float') : 35 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 35 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+	Types of features in processed data (exact raw dtype, raw dtype):
+		('float32', 'float') : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+		('int8', 'int')      :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', [])     : 32 | ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number', ...]
+		('int', ['bool']) :  3 | ['cwr_flag_number', 'IRC', 'IGMP']
+	0.1s = Fit runtime
+	35 features in original data used to generate 35 features in processed data.
+	Train Data (Processed) Memory Usage: 0.40 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.09s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'f1_macro'
+	To change this, specify the eval_metric parameter of Predictor()
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/learner.pkl
+User-specified model hyperparameters to be fit:
+{
+	'GBM': [{}],
+	'XGB': [{}],
+	'RF': [{}],
+	'XT': [{}],
+}
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/utils/data/X.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/utils/data/y.pkl
+Model configs that will be trained (in order):
+	LightGBM_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.lgb.lgb_model.LGBModel'>, 'priority': 90}}
+	RandomForest_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'model_type': <class 'autogluon.tabular.models.rf.rf_model.RFModel'>, 'priority': 80}, 'ag_args_ensemble': {'use_child_oof': True}}
+	ExtraTrees_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile'], 'model_type': <class 'autogluon.tabular.models.xt.xt_model.XTModel'>, 'priority': 60}, 'ag_args_ensemble': {'use_child_oof': True}}
+	XGBoost_BAG_L1: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'softclass'], 'model_type': <class 'autogluon.tabular.models.xgboost.xgboost_model.XGBoostModel'>, 'priority': 40}}
+Fitting 4 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 521.71s of the 521.70s of remaining time.
+	Fitting LightGBM_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.068738	valid_set's f1_macro: 0.987498
+[100]	valid_set's binary_logloss: 0.0341333	valid_set's f1_macro: 0.989999
+[150]	valid_set's binary_logloss: 0.0432394	valid_set's f1_macro: 0.987499
+[200]	valid_set's binary_logloss: 0.0606125	valid_set's f1_macro: 0.985
+[250]	valid_set's binary_logloss: 0.0762547	valid_set's f1_macro: 0.985
+[300]	valid_set's binary_logloss: 0.0926365	valid_set's f1_macro: 0.982499
+[350]	valid_set's binary_logloss: 0.101576	valid_set's f1_macro: 0.982499
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0693489	valid_set's f1_macro: 0.987498
+[100]	valid_set's binary_logloss: 0.0308562	valid_set's f1_macro: 0.987499
+[150]	valid_set's binary_logloss: 0.0345721	valid_set's f1_macro: 0.989999
+[200]	valid_set's binary_logloss: 0.0471168	valid_set's f1_macro: 0.989999
+[250]	valid_set's binary_logloss: 0.0574165	valid_set's f1_macro: 0.989999
+[300]	valid_set's binary_logloss: 0.0653353	valid_set's f1_macro: 0.989999
+[350]	valid_set's binary_logloss: 0.0685154	valid_set's f1_macro: 0.989999
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0706752	valid_set's f1_macro: 0.987499
+[100]	valid_set's binary_logloss: 0.0390819	valid_set's f1_macro: 0.9875
+[150]	valid_set's binary_logloss: 0.0401503	valid_set's f1_macro: 0.9875
+[200]	valid_set's binary_logloss: 0.0492783	valid_set's f1_macro: 0.99
+[250]	valid_set's binary_logloss: 0.0605335	valid_set's f1_macro: 0.99
+[300]	valid_set's binary_logloss: 0.0677749	valid_set's f1_macro: 0.99
+[350]	valid_set's binary_logloss: 0.0720702	valid_set's f1_macro: 0.9925
+[400]	valid_set's binary_logloss: 0.072768	valid_set's f1_macro: 0.9925
+[450]	valid_set's binary_logloss: 0.0724975	valid_set's f1_macro: 0.9925
+[500]	valid_set's binary_logloss: 0.0737441	valid_set's f1_macro: 0.9925
+[550]	valid_set's binary_logloss: 0.0737394	valid_set's f1_macro: 0.9925
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0971426	valid_set's f1_macro: 0.974984
+[100]	valid_set's binary_logloss: 0.0642545	valid_set's f1_macro: 0.987498
+[150]	valid_set's binary_logloss: 0.0815354	valid_set's f1_macro: 0.987498
+[200]	valid_set's binary_logloss: 0.102381	valid_set's f1_macro: 0.987498
+[250]	valid_set's binary_logloss: 0.124874	valid_set's f1_macro: 0.984997
+[300]	valid_set's binary_logloss: 0.144535	valid_set's f1_macro: 0.984997
+[350]	valid_set's binary_logloss: 0.158397	valid_set's f1_macro: 0.984997
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0588753	valid_set's f1_macro: 0.9975
+[100]	valid_set's binary_logloss: 0.0235818	valid_set's f1_macro: 0.995
+[150]	valid_set's binary_logloss: 0.023422	valid_set's f1_macro: 0.9975
+[200]	valid_set's binary_logloss: 0.0265798	valid_set's f1_macro: 0.9975
+[250]	valid_set's binary_logloss: 0.0280351	valid_set's f1_macro: 0.9975
+[300]	valid_set's binary_logloss: 0.0305427	valid_set's f1_macro: 0.9975
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0738237	valid_set's f1_macro: 0.987498
+[100]	valid_set's binary_logloss: 0.0429123	valid_set's f1_macro: 0.984998
+[150]	valid_set's binary_logloss: 0.0518647	valid_set's f1_macro: 0.984998
+[200]	valid_set's binary_logloss: 0.0653127	valid_set's f1_macro: 0.984998
+[250]	valid_set's binary_logloss: 0.074364	valid_set's f1_macro: 0.984998
+[300]	valid_set's binary_logloss: 0.0809689	valid_set's f1_macro: 0.984998
+[350]	valid_set's binary_logloss: 0.0888073	valid_set's f1_macro: 0.984998
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0753748	valid_set's f1_macro: 0.989999
+[100]	valid_set's binary_logloss: 0.0357548	valid_set's f1_macro: 0.989999
+[150]	valid_set's binary_logloss: 0.0328681	valid_set's f1_macro: 0.989999
+[200]	valid_set's binary_logloss: 0.0380121	valid_set's f1_macro: 0.989999
+[250]	valid_set's binary_logloss: 0.0461906	valid_set's f1_macro: 0.989999
+[300]	valid_set's binary_logloss: 0.054199	valid_set's f1_macro: 0.989999
+	Fitting 10000 rounds... Hyperparameters: {'learning_rate': 0.05, 'seed': 0}
+[50]	valid_set's binary_logloss: 0.0596142	valid_set's f1_macro: 0.995
+[100]	valid_set's binary_logloss: 0.0227324	valid_set's f1_macro: 0.995
+[150]	valid_set's binary_logloss: 0.0242571	valid_set's f1_macro: 0.995
+[200]	valid_set's binary_logloss: 0.0301911	valid_set's f1_macro: 0.9925
+[250]	valid_set's binary_logloss: 0.0337346	valid_set's f1_macro: 0.9925
+[300]	valid_set's binary_logloss: 0.0361837	valid_set's f1_macro: 0.995
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+	0.9916	 = Validation score   (f1_macro)
+	14.02s	 = Training   runtime
+	0.03s	 = Validation runtime
+	15764.4	 = Inference  throughput (rows/s | 400 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: RandomForest_BAG_L1 ... Training model for up to 507.32s of the 507.31s of remaining time.
+	Fitting RandomForest_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+	0.99	 = Validation score   (f1_macro)
+	1.66s	 = Training   runtime
+	0.19s	 = Validation runtime
+	16570.1	 = Inference  throughput (rows/s | 3200 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: ExtraTrees_BAG_L1 ... Training model for up to 505.33s of the 505.32s of remaining time.
+	Fitting ExtraTrees_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/model_template.pkl
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+	`use_child_oof` was specified for this model. It will function similarly to a bagged model, but will only fit one child model.
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+	0.9891	 = Validation score   (f1_macro)
+	0.92s	 = Training   runtime
+	0.21s	 = Validation runtime
+	14942.6	 = Inference  throughput (rows/s | 3200 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 504.04s of the 504.03s of remaining time.
+	Fitting XGBoost_BAG_L1 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/model_template.pkl
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with SequentialLocalFoldFittingStrategy (sequential: cpus=1, gpus=0)
+[0]	validation_0-logloss:0.60232	validation_0-_f1_macro:-0.98750
+[50]	validation_0-logloss:0.03551	validation_0-_f1_macro:-0.99000
+[100]	validation_0-logloss:0.04024	validation_0-_f1_macro:-0.98500
+[150]	validation_0-logloss:0.04380	validation_0-_f1_macro:-0.98500
+[200]	validation_0-logloss:0.04511	validation_0-_f1_macro:-0.98500
+[250]	validation_0-logloss:0.04661	validation_0-_f1_macro:-0.98500
+[300]	validation_0-logloss:0.04845	validation_0-_f1_macro:-0.98500
+[312]	validation_0-logloss:0.04855	validation_0-_f1_macro:-0.98500
+[0]	validation_0-logloss:0.60212	validation_0-_f1_macro:-0.99250
+[50]	validation_0-logloss:0.03610	validation_0-_f1_macro:-0.99000
+[100]	validation_0-logloss:0.03425	validation_0-_f1_macro:-0.99000
+[150]	validation_0-logloss:0.03448	validation_0-_f1_macro:-0.99000
+[200]	validation_0-logloss:0.03539	validation_0-_f1_macro:-0.99000
+[250]	validation_0-logloss:0.03556	validation_0-_f1_macro:-0.99000
+[300]	validation_0-logloss:0.03667	validation_0-_f1_macro:-0.99000
+[0]	validation_0-logloss:0.60244	validation_0-_f1_macro:-0.98500
+[50]	validation_0-logloss:0.03797	validation_0-_f1_macro:-0.98500
+[100]	validation_0-logloss:0.03765	validation_0-_f1_macro:-0.98750
+[150]	validation_0-logloss:0.03559	validation_0-_f1_macro:-0.98750
+[200]	validation_0-logloss:0.03610	validation_0-_f1_macro:-0.99000
+[250]	validation_0-logloss:0.03743	validation_0-_f1_macro:-0.99000
+[300]	validation_0-logloss:0.03770	validation_0-_f1_macro:-0.99000
+[333]	validation_0-logloss:0.03722	validation_0-_f1_macro:-0.99000
+[0]	validation_0-logloss:0.60354	validation_0-_f1_macro:-0.98750
+[50]	validation_0-logloss:0.07114	validation_0-_f1_macro:-0.97749
+[100]	validation_0-logloss:0.08137	validation_0-_f1_macro:-0.98250
+[150]	validation_0-logloss:0.08863	validation_0-_f1_macro:-0.98250
+[200]	validation_0-logloss:0.09297	validation_0-_f1_macro:-0.98250
+[250]	validation_0-logloss:0.09734	validation_0-_f1_macro:-0.98250
+[300]	validation_0-logloss:0.09948	validation_0-_f1_macro:-0.98250
+[0]	validation_0-logloss:0.60147	validation_0-_f1_macro:-0.99250
+[50]	validation_0-logloss:0.02544	validation_0-_f1_macro:-0.99750
+[100]	validation_0-logloss:0.02124	validation_0-_f1_macro:-0.99750
+[150]	validation_0-logloss:0.02106	validation_0-_f1_macro:-0.99750
+[200]	validation_0-logloss:0.02180	validation_0-_f1_macro:-0.99750
+[250]	validation_0-logloss:0.02197	validation_0-_f1_macro:-0.99750
+[300]	validation_0-logloss:0.02213	validation_0-_f1_macro:-0.99750
+[325]	validation_0-logloss:0.02255	validation_0-_f1_macro:-0.99750
+[0]	validation_0-logloss:0.60210	validation_0-_f1_macro:-0.99000
+[50]	validation_0-logloss:0.04561	validation_0-_f1_macro:-0.98500
+[100]	validation_0-logloss:0.04856	validation_0-_f1_macro:-0.98750
+[150]	validation_0-logloss:0.05242	validation_0-_f1_macro:-0.98750
+[200]	validation_0-logloss:0.05291	validation_0-_f1_macro:-0.98750
+[250]	validation_0-logloss:0.05288	validation_0-_f1_macro:-0.98750
+[300]	validation_0-logloss:0.05324	validation_0-_f1_macro:-0.99000
+[0]	validation_0-logloss:0.60329	validation_0-_f1_macro:-0.99000
+[50]	validation_0-logloss:0.05071	validation_0-_f1_macro:-0.99000
+[100]	validation_0-logloss:0.04829	validation_0-_f1_macro:-0.99000
+[150]	validation_0-logloss:0.04998	validation_0-_f1_macro:-0.99000
+[200]	validation_0-logloss:0.05103	validation_0-_f1_macro:-0.99000
+[250]	validation_0-logloss:0.05239	validation_0-_f1_macro:-0.99000
+[300]	validation_0-logloss:0.05351	validation_0-_f1_macro:-0.99000
+[0]	validation_0-logloss:0.60151	validation_0-_f1_macro:-0.99500
+[50]	validation_0-logloss:0.02815	validation_0-_f1_macro:-0.99500
+[100]	validation_0-logloss:0.02346	validation_0-_f1_macro:-0.99250
+[150]	validation_0-logloss:0.02474	validation_0-_f1_macro:-0.99250
+[200]	validation_0-logloss:0.02524	validation_0-_f1_macro:-0.99250
+[250]	validation_0-logloss:0.02470	validation_0-_f1_macro:-0.99250
+[300]	validation_0-logloss:0.02400	validation_0-_f1_macro:-0.99250
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+	0.9916	 = Validation score   (f1_macro)
+	11.19s	 = Training   runtime
+	0.03s	 = Validation runtime
+	14793.8	 = Inference  throughput (rows/s | 400 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/utils/oof.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/utils/oof.pkl
+Model configs that will be trained (in order):
+	WeightedEnsemble_L2: 	{'ag_args': {'problem_types': ['binary', 'multiclass', 'regression', 'quantile', 'softclass'], 'valid_base': False, 'name_bag_suffix': '', 'model_type': <class 'autogluon.core.models.greedy_ensemble.greedy_weighted_ensemble_model.GreedyWeightedEnsembleModel'>, 'priority': 0}, 'ag_args_ensemble': {'save_bag_folds': True}}
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.00s of the 492.41s of remaining time.
+	Fitting WeightedEnsemble_L2 with 'num_gpus': 0, 'num_cpus': 1
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/model_template.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/model_template.pkl
+	Fitting 1 model on all data | Fitting with cpus=1, gpus=0, mem=0.0/10.7 GB
+Ensemble size: 1
+Ensemble weights: 
+[1. 0. 0. 0.]
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/oof.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
+	Ensemble Weights: {'LightGBM_BAG_L1': 1.0}
+	0.9916	 = Validation score   (f1_macro)
+	0.34s	 = Training   runtime
+	0.0s	 = Validation runtime
+	15422.5	 = Inference  throughput (rows/s | 400 batch size)
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+AutoGluon training complete, total runtime = 29.91s ... Best model: WeightedEnsemble_L2 | Estimated inference throughput: 15422.5 rows/s (400 batch size)
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Enabling decision threshold calibration (calibrate_decision_threshold='auto', metric is valid, problem_type is 'binary')
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/utils/data/y.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/utils/oof.pkl
+Calibrating decision threshold to optimize metric f1_macro | Checking 51 thresholds...
+	threshold: 0.500	| val: 0.9916	| NEW BEST
+	threshold: 0.480	| val: 0.9844
+	threshold: 0.520	| val: 0.9894
+	threshold: 0.460	| val: 0.9292
+	threshold: 0.540	| val: 0.9265
+	threshold: 0.440	| val: 0.9292
+	threshold: 0.560	| val: 0.9262
+	threshold: 0.420	| val: 0.9292
+	threshold: 0.580	| val: 0.9262
+	threshold: 0.400	| val: 0.9292
+	threshold: 0.600	| val: 0.9255
+	threshold: 0.380	| val: 0.9291
+	threshold: 0.620	| val: 0.9255
+	threshold: 0.360	| val: 0.9288
+	threshold: 0.640	| val: 0.9255
+	threshold: 0.340	| val: 0.9285
+	threshold: 0.660	| val: 0.9255
+	threshold: 0.320	| val: 0.9279
+	threshold: 0.680	| val: 0.9255
+	threshold: 0.300	| val: 0.9276
+	threshold: 0.700	| val: 0.9255
+	threshold: 0.280	| val: 0.9266
+	threshold: 0.720	| val: 0.9255
+	threshold: 0.260	| val: 0.9250
+	threshold: 0.740	| val: 0.9252
+	threshold: 0.240	| val: 0.9241
+	threshold: 0.760	| val: 0.9252
+	threshold: 0.220	| val: 0.9237
+	threshold: 0.780	| val: 0.9252
+	threshold: 0.200	| val: 0.9222
+	threshold: 0.800	| val: 0.9249
+	threshold: 0.180	| val: 0.9221
+	threshold: 0.820	| val: 0.9249
+	threshold: 0.160	| val: 0.9193
+	threshold: 0.840	| val: 0.9249
+	threshold: 0.140	| val: 0.9155
+	threshold: 0.860	| val: 0.9249
+	threshold: 0.120	| val: 0.9113
+	threshold: 0.880	| val: 0.9249
+	threshold: 0.100	| val: 0.9027
+	threshold: 0.900	| val: 0.9249
+	threshold: 0.080	| val: 0.8436
+	threshold: 0.920	| val: 0.8612
+	threshold: 0.060	| val: 0.8300
+	threshold: 0.940	| val: 0.8612
+	threshold: 0.040	| val: 0.7699
+	threshold: 0.960	| val: 0.7952
+	threshold: 0.020	| val: 0.6828
+	threshold: 0.980	| val: 0.7242
+	threshold: 0.000	| val: 0.3333
+	threshold: 1.000	| val: 0.3333
+Calibrating decision threshold via fine-grained search | Checking 38 thresholds...
+	threshold: 0.501	| val: 0.9909
+	threshold: 0.502	| val: 0.9909
+	threshold: 0.503	| val: 0.9906
+	threshold: 0.504	| val: 0.9903
+	threshold: 0.505	| val: 0.9900
+	threshold: 0.506	| val: 0.9897
+	threshold: 0.507	| val: 0.9897
+	threshold: 0.508	| val: 0.9897
+	threshold: 0.509	| val: 0.9897
+	threshold: 0.510	| val: 0.9897
+	threshold: 0.511	| val: 0.9897
+	threshold: 0.512	| val: 0.9897
+	threshold: 0.513	| val: 0.9897
+	threshold: 0.514	| val: 0.9897
+	threshold: 0.515	| val: 0.9897
+	threshold: 0.516	| val: 0.9897
+	threshold: 0.517	| val: 0.9897
+	threshold: 0.518	| val: 0.9897
+	threshold: 0.519	| val: 0.9897
+	threshold: 0.499	| val: 0.9912
+	threshold: 0.498	| val: 0.9912
+	threshold: 0.497	| val: 0.9912
+	threshold: 0.496	| val: 0.9912
+	threshold: 0.495	| val: 0.9912
+	threshold: 0.494	| val: 0.9912
+	threshold: 0.493	| val: 0.9897
+	threshold: 0.492	| val: 0.9897
+	threshold: 0.491	| val: 0.9897
+	threshold: 0.490	| val: 0.9897
+	threshold: 0.489	| val: 0.9891
+	threshold: 0.488	| val: 0.9891
+	threshold: 0.487	| val: 0.9887
+	threshold: 0.486	| val: 0.9887
+	threshold: 0.485	| val: 0.9887
+	threshold: 0.484	| val: 0.9887
+	threshold: 0.483	| val: 0.9887
+	threshold: 0.482	| val: 0.9878
+	threshold: 0.481	| val: 0.9856
+	Base Threshold: 0.500	| val: 0.9916
+	Best Threshold: 0.500	| val: 0.9916
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/trainer.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/learner.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/predictor.pkl
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/version.txt with contents "1.5.0"
+Saving /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/metadata.json
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon")
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/LightGBM_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/RandomForest_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/ExtraTrees_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/XGBoost_BAG_L1/model.pkl
+Loading: /content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/binario/autogluon/modelo_autogluon/models/WeightedEnsemble_L2/model.pkl
