@@ -1,5 +1,0 @@
-{
-  "melhor_modelo": "HistGradientBoosting",
-  "macro_f1_cv": 0.6623252752974819,
-  "search_metric": "f1_macro"
-}
