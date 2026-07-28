@@ -1,0 +1,5 @@
+{
+  "search_metric": "Macro F1 customizado",
+  "prediction_column": "prediction_label",
+  "score_column": "prediction_score_Malicious"
+}
