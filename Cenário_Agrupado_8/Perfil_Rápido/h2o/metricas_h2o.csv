@@ -1,0 +1,10 @@
+Framework,Métrica,Valor
+h2o,Accuracy,0.74
+h2o,Balanced Accuracy,0.74
+h2o,Precision Macro,0.7435495093944408
+h2o,Recall Macro,0.74
+h2o,Macro-F1,0.7406300488451406
+h2o,Weighted-F1,0.7406300488451407
+h2o,MCC,0.7031488217716019
+h2o,ROC-AUC,
+h2o,Average Precision,
