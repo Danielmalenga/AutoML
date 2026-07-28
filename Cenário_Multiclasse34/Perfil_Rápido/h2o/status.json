@@ -1,0 +1,11 @@
+{
+  "framework": "h2o",
+  "status": "error",
+  "inicio_epoch": 1785251213.757901,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_h2o/bin/python",
+  "fim_epoch": 1785251856.6533089,
+  "duracao_segundos": 642.8954079151154,
+  "erro": "RuntimeError('H2O AutoML terminou sem modelo líder.')",
+  "traceback": "Traceback (most recent call last):\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1617, in executar_framework\n    y_pred, y_proba, leaderboard, info = executar_h2o(\n                                         ^^^^^^^^^^^^^\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 725, in executar_h2o\n    raise RuntimeError(\"H2O AutoML terminou sem modelo líder.\")\nRuntimeError: H2O AutoML terminou sem modelo líder.\n"
+}

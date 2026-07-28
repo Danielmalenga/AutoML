@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/content/CICIoT2023_AutoML_Pipeline/automl_runner.py", line 1617, in executar_framework
+    y_pred, y_proba, leaderboard, info = executar_h2o(
+                                         ^^^^^^^^^^^^^
+  File "/content/CICIoT2023_AutoML_Pipeline/automl_runner.py", line 725, in executar_h2o
+    raise RuntimeError("H2O AutoML terminou sem modelo líder.")
+RuntimeError: H2O AutoML terminou sem modelo líder.

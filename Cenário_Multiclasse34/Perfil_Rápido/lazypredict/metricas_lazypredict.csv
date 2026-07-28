@@ -1,0 +1,10 @@
+Framework,Métrica,Valor
+lazypredict,Accuracy,0.660371747211896
+lazypredict,Balanced Accuracy,0.6553823529411765
+lazypredict,Precision Macro,0.6601910589149494
+lazypredict,Recall Macro,0.6553823529411765
+lazypredict,Macro-F1,0.6564573801329612
+lazypredict,Weighted-F1,0.6613315224835098
+lazypredict,MCC,0.6501588347215057
+lazypredict,ROC-AUC,
+lazypredict,Average Precision,
