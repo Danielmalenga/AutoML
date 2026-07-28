@@ -1,0 +1,7 @@
+Model,Accuracy,AUC,Recall,Prec.,F1,Kappa,MCC,Macro F1,TT (Sec)
+Logistic Regression,0.1741,0.0,0.1741,0.131,0.1231,0.1488,0.1534,0.0,44.706
+Decision Tree Classifier,0.6083,0.7994,0.6083,0.6085,0.6081,0.5964,0.5964,0.0,1.918
+Random Forest Classifier,0.6493,0.9652,0.6493,0.6512,0.6492,0.6386,0.6388,0.0,15.786
+Extra Trees Classifier,0.632,0.9459,0.632,0.6325,0.6317,0.6207,0.6208,0.0,10.086
+Light Gradient Boosting Machine,0.6611,0.0,0.6611,0.6646,0.6613,0.6508,0.651,0.0,30.276
+Extreme Gradient Boosting,0.6603,0.9733,0.6603,0.6642,0.6605,0.6499,0.6501,0.0,26.526
