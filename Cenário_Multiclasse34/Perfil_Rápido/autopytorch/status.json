@@ -1,0 +1,20 @@
+{
+  "framework": "autopytorch",
+  "status": "success",
+  "inicio_epoch": 1785254245.4957123,
+  "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_autopytorch/bin/python",
+  "fim_epoch": 1785255164.0717368,
+  "duracao_segundos": 918.5760245323181,
+  "metricas": {
+    "Accuracy": 0.576728624535316,
+    "Balanced Accuracy": 0.574735294117647,
+    "Precision Macro": 0.5933533746047394,
+    "Recall Macro": 0.574735294117647,
+    "Macro-F1": 0.5683745134003801,
+    "Weighted-F1": 0.5724737307354064,
+    "MCC": 0.5653409984869288,
+    "ROC-AUC": NaN,
+    "Average Precision": NaN
+  }
+}
