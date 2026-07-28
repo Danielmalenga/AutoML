@@ -1,0 +1,33 @@
+{
+  "train_shape": [
+    12800,
+    39
+  ],
+  "test_shape": [
+    3200,
+    39
+  ],
+  "classes_train": {
+    "Mirai": 1600,
+    "Recon": 1600,
+    "Benign": 1600,
+    "DoS": 1600,
+    "Web": 1600,
+    "Spoofing": 1600,
+    "BruteForce": 1600,
+    "DDoS": 1600
+  },
+  "classes_test": {
+    "Mirai": 400,
+    "Recon": 400,
+    "Benign": 400,
+    "DoS": 400,
+    "Web": 400,
+    "Spoofing": 400,
+    "BruteForce": 400,
+    "DDoS": 400
+  },
+  "colunas_removidas_vazias": [],
+  "colunas_removidas_constantes": [],
+  "numero_features": 39
+}
