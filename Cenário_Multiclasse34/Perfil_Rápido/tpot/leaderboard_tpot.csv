@@ -1,0 +1,7 @@
+pipeline,generation,mutation_count,crossover_count,predecessor,operator_count,internal_cv_score
+GaussianNB(input_matrix),0,0,0,"('ROOT',)",1,0.2659709889436145
+"RandomForestClassifier(MinMaxScaler(input_matrix), RandomForestClassifier__bootstrap=True, RandomForestClassifier__criterion=gini, RandomForestClassifier__max_features=0.2, RandomForestClassifier__min_samples_leaf=8, RandomForestClassifier__min_samples_split=4, RandomForestClassifier__n_estimators=100)",0,0,0,"('ROOT',)",2,0.6549869748777579
+"KNeighborsClassifier(input_matrix, KNeighborsClassifier__n_neighbors=3, KNeighborsClassifier__p=1, KNeighborsClassifier__weights=distance)",0,0,0,"('ROOT',)",1,0.48349390471502557
+"LinearSVC(SelectFwe(input_matrix, SelectFwe__alpha=0.036000000000000004), LinearSVC__C=0.0001, LinearSVC__dual=True, LinearSVC__loss=squared_hinge, LinearSVC__penalty=l2, LinearSVC__tol=0.001)",0,0,0,"('ROOT',)",2,-inf
+"ExtraTreesClassifier(input_matrix, ExtraTreesClassifier__bootstrap=False, ExtraTreesClassifier__criterion=entropy, ExtraTreesClassifier__max_features=0.35000000000000003, ExtraTreesClassifier__min_samples_leaf=18, ExtraTreesClassifier__min_samples_split=9, ExtraTreesClassifier__n_estimators=100)",0,0,0,"('ROOT',)",1,0.6307704132058986
+"ExtraTreesClassifier(input_matrix, ExtraTreesClassifier__bootstrap=True, ExtraTreesClassifier__criterion=entropy, ExtraTreesClassifier__max_features=0.8, ExtraTreesClassifier__min_samples_leaf=19, ExtraTreesClassifier__min_samples_split=5, ExtraTreesClassifier__n_estimators=100)",0,0,0,"('ROOT',)",1,0.6392697783982981
