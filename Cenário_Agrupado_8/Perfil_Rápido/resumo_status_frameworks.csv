@@ -1,0 +1,11 @@
+Framework,Status,Duração (s),Erro
+autogluon,success,639.0445230007172,
+autopytorch,success,817.4160768985748,
+sklearn,success,182.96478009223938,
+flaml,success,609.1455204486847,
+lazypredict,success,17.217252016067505,
+h2o,success,620.6055474281311,
+autosklearn,success,619.777601480484,
+tpot,success,630.8331010341644,
+pycaret,success,89.00969648361206,
+autokeras,success,247.64361333847046,
