@@ -1,0 +1,9 @@
+,Pred_Benign,Pred_BruteForce,Pred_DDoS,Pred_DoS,Pred_Mirai,Pred_Recon,Pred_Spoofing,Pred_Web
+Real_Benign,289,34,0,0,0,34,8,35
+Real_BruteForce,49,246,0,0,0,28,4,73
+Real_DDoS,0,0,289,110,1,0,0,0
+Real_DoS,0,0,56,344,0,0,0,0
+Real_Mirai,0,0,0,1,399,0,0,0
+Real_Recon,33,35,0,0,0,249,13,70
+Real_Spoofing,32,10,0,0,0,5,331,22
+Real_Web,33,35,0,0,0,68,20,244
