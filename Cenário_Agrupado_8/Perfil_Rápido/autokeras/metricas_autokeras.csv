@@ -1,0 +1,10 @@
+Framework,Métrica,Valor
+autokeras,Accuracy,0.356875
+autokeras,Balanced Accuracy,0.356875
+autokeras,Precision Macro,0.3255868801600349
+autokeras,Recall Macro,0.356875
+autokeras,Macro-F1,0.31259971857979585
+autokeras,Weighted-F1,0.31259971857979585
+autokeras,MCC,0.28208372286200367
+autokeras,ROC-AUC,
+autokeras,Average Precision,

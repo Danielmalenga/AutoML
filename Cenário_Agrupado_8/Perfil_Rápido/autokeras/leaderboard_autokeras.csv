@@ -1,0 +1,6 @@
+trial_id,status,score,best_step,hp_structured_data_block_1/normalize,hp_structured_data_block_1/dense_block_1/num_layers,hp_structured_data_block_1/dense_block_1/use_batchnorm,hp_structured_data_block_1/dense_block_1/dropout,hp_structured_data_block_1/dense_block_1/units_0,hp_structured_data_block_1/dense_block_1/units_1,hp_classification_head_1/dropout,hp_optimizer,hp_learning_rate
+0,COMPLETED,0.33759405669328946,6,True,2,False,0,32,32,0.0,adam,0.001
+1,COMPLETED,0.33630698624725786,9,True,2,False,0,256,32,0.0,adam,0.001
+3,COMPLETED,0.31047234046281713,14,True,2,False,0,32,32,0.25,adam,0.001
+4,COMPLETED,0.23544992533765585,0,True,2,False,0,32,1024,0.0,adam,0.001
+2,COMPLETED,0.12319506374815421,4,True,2,False,0,32,32,0.0,adam,0.1
