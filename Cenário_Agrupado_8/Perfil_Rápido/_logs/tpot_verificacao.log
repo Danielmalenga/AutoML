@@ -1,0 +1,8 @@
+/content/micromamba/envs/ciciot_tpot/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/content/micromamba/envs/ciciot_tpot/lib/python3.10/site-packages/tpot/builtins/__init__.py:36: UserWarning: Warning: optional dependency `torch` is not available. - skipping import of NN models.
+  warnings.warn("Warning: optional dependency `torch` is not available. - skipping import of NN models.")
+Python: 3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]
+Executável: /content/micromamba/envs/ciciot_tpot/bin/python
+TPOT: 0.12.2
+Scikit-learn: 1.5.2
