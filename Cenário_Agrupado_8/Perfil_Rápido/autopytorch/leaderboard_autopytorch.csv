@@ -1,0 +1,11 @@
+statistics
+"autoPyTorch results:
+	Dataset name: 7450d838-8a8b-11f1-a4a0-0242ac1c000c
+	Optimisation Metric: f1_macro
+	Best validation score: 0.7371507977844497
+	Number of target algorithm runs: 12
+	Number of successful target algorithm runs: 9
+	Number of crashed target algorithm runs: 1
+	Number of target algorithms that exceeded the time limit: 2
+	Number of target algorithms that exceeded the memory limit: 0
+"

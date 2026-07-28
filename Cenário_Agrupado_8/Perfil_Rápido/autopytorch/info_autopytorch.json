@@ -1,0 +1,16 @@
+{
+  "search_metric": "f1_macro",
+  "label_classes": [
+    "Benign",
+    "BruteForce",
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Web"
+  ],
+  "resampling_strategy": "HoldoutValTypes.stratified_holdout_validation",
+  "temporary_directory": "/content/autopytorch_tmp_58528",
+  "output_directory": "/content/autopytorch_out_58528"
+}
