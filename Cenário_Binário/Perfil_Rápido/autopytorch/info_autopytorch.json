@@ -1,0 +1,10 @@
+{
+  "search_metric": "f1_macro",
+  "label_classes": [
+    "Benign",
+    "Malicious"
+  ],
+  "resampling_strategy": "HoldoutValTypes.stratified_holdout_validation",
+  "temporary_directory": "/content/autopytorch_tmp_30591",
+  "output_directory": "/content/autopytorch_out_30591"
+}

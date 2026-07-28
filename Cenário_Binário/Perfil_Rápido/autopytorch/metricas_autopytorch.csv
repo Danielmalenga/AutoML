@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+autopytorch,Accuracy,0.9825
+autopytorch,Balanced Accuracy,0.9824999999999999
+autopytorch,Precision Macro,0.9826085869320598
+autopytorch,Recall Macro,0.9824999999999999
+autopytorch,Macro-F1,0.9824990155696258
+autopytorch,Weighted-F1,0.9824990155696258
+autopytorch,MCC,0.9651085808233575
+autopytorch,Precision Malicious,0.9898477157360406
+autopytorch,Recall Malicious,0.975
+autopytorch,F1 Malicious,0.982367758186398
+autopytorch,ROC-AUC,0.9950812500000001
+autopytorch,Average Precision,0.9969006865480902
