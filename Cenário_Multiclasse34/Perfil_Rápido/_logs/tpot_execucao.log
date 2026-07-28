@@ -1,0 +1,26 @@
+
+Optimization Progress:   0%|          | 0/10 [00:00<?, ?pipeline/s]
+Optimization Progress:  10%|█         | 1/10 [00:01<00:11,  1.28s/pipeline]
+Optimization Progress:  20%|██        | 2/10 [01:09<05:23, 40.45s/pipeline]
+Optimization Progress:  30%|███       | 3/10 [03:39<10:34, 90.70s/pipeline]
+Optimization Progress:  40%|████      | 4/10 [08:56<18:00, 180.01s/pipeline]
+Optimization Progress:  60%|██████    | 6/10 [09:25<06:09, 92.28s/pipeline] 
+Optimization Progress:  70%|███████   | 7/10 [10:02<03:51, 77.14s/pipeline]
+                                                                           
+
+Optimization Progress:  70%|███████   | 7/10 [10:02<03:51, 77.14s/pipeline]
+                                                                           
+10.07 minutes have elapsed. TPOT will close down.
+TPOT closed during evaluation in one generation.
+WARNING: TPOT may not provide a good pipeline if TPOT is stopped/interrupted in a early generation.
+
+Optimization Progress:  70%|███████   | 7/10 [10:02<03:51, 77.14s/pipeline]
+                                                                           
+
+Optimization Progress:  70%|███████   | 7/10 [10:02<03:51, 77.14s/pipeline]
+                                                                           
+TPOT closed prematurely. Will use the current best pipeline.
+
+Optimization Progress:  70%|███████   | 7/10 [10:02<03:51, 77.14s/pipeline]
+                                                                           
+Best pipeline: RandomForestClassifier(MinMaxScaler(input_matrix), bootstrap=True, criterion=gini, max_features=0.2, min_samples_leaf=8, min_samples_split=4, n_estimators=100)

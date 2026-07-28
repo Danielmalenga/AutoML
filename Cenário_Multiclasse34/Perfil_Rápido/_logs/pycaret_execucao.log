@@ -1,0 +1,39 @@
+====================================================================================================
+VALIDAÇÃO DOS MODELOS DO PYCARET
+====================================================================================================
+Modelos solicitados: ['lr', 'dt', 'rf', 'et', 'lightgbm', 'xgboost']
+Modelos indisponíveis: []
+Todos os modelos solicitados estão disponíveis.
+====================================================================================================
+
+Processing:   0%|          | 0/29 [00:00<?, ?it/s]
+Processing:  17%|█▋        | 5/29 [03:43<17:53, 44.72s/it]
+Processing:  24%|██▍       | 7/29 [03:43<10:26, 28.50s/it]
+Processing:  31%|███       | 9/29 [03:53<06:47, 20.40s/it]
+Processing:  38%|███▊      | 11/29 [03:53<04:07, 13.73s/it]
+Processing:  45%|████▍     | 13/29 [05:12<05:51, 21.95s/it]
+Processing:  52%|█████▏    | 15/29 [05:12<03:31, 15.11s/it]
+Processing:  59%|█████▊    | 17/29 [06:03<03:38, 18.23s/it]
+Processing:  66%|██████▌   | 19/29 [06:03<02:06, 12.68s/it]
+Processing:  72%|███████▏  | 21/29 [08:34<04:14, 31.86s/it]
+Processing:  79%|███████▉  | 23/29 [08:35<02:13, 22.24s/it]
+Processing:  86%|████████▌ | 25/29 [10:47<02:22, 35.56s/it]
+Processing:  93%|█████████▎| 27/29 [10:47<00:49, 24.86s/it]
+Processing: 100%|██████████| 29/29 [11:44<00:00, 25.93s/it]
+                                                           
+                                    Model  Accuracy     AUC  Recall   Prec.  \
+lr                    Logistic Regression    0.1741  0.0000  0.1741  0.1310   
+dt               Decision Tree Classifier    0.6083  0.7994  0.6083  0.6085   
+rf               Random Forest Classifier    0.6493  0.9652  0.6493  0.6512   
+et                 Extra Trees Classifier    0.6320  0.9459  0.6320  0.6325   
+lightgbm  Light Gradient Boosting Machine    0.6611  0.0000  0.6611  0.6646   
+xgboost         Extreme Gradient Boosting    0.6603  0.9733  0.6603  0.6642   
+
+              F1   Kappa     MCC  Macro F1  TT (Sec)  
+lr        0.1231  0.1488  0.1534       0.0    44.706  
+dt        0.6081  0.5964  0.5964       0.0     1.918  
+rf        0.6492  0.6386  0.6388       0.0    15.786  
+et        0.6317  0.6207  0.6208       0.0    10.086  
+lightgbm  0.6613  0.6508  0.6510       0.0    30.276  
+xgboost   0.6605  0.6499  0.6501       0.0    26.526  
+Transformation Pipeline and Model Successfully Saved

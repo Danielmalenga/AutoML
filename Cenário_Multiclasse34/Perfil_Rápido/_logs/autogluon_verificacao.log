@@ -1,0 +1,8 @@
+Python: 3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]
+Executável: /content/micromamba/envs/ciciot_autogluon/bin/python
+NumPy: 1.26.4
+pandas: 2.2.3
+Scikit-learn: 1.6.1
+PyArrow: 19.0.1
+Matplotlib: 3.9.4
+AutoGluon: 1.5.0
