@@ -1,0 +1,20 @@
+{
+  "framework": "flaml",
+  "status": "success",
+  "inicio_epoch": 1785249591.485722,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_flaml/bin/python",
+  "fim_epoch": 1785250300.2189512,
+  "duracao_segundos": 708.7332291603088,
+  "metricas": {
+    "Accuracy": 0.5595539033457249,
+    "Balanced Accuracy": 0.555279411764706,
+    "Precision Macro": 0.557504734664938,
+    "Recall Macro": 0.555279411764706,
+    "Macro-F1": 0.5512313712937149,
+    "Weighted-F1": 0.5555165877996434,
+    "MCC": 0.5464477301123015,
+    "ROC-AUC": NaN,
+    "Average Precision": NaN
+  }
+}
