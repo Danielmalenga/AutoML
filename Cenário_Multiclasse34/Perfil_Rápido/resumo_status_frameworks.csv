@@ -1,0 +1,11 @@
+Framework,Status,Duração (s),Erro
+autogluon,success,731.0758323669434,
+sklearn,success,1252.226721048355,
+tpot,success,662.0851285457611,
+autosklearn,success,765.1839592456818,
+lazypredict,success,102.0618622303009,
+autopytorch,success,918.5760245323181,
+flaml,success,708.7332291603088,
+pycaret,success,790.8521845340729,
+autokeras,success,952.1047358512878,
+h2o,error,642.8954079151154,RuntimeError('H2O AutoML terminou sem modelo líder.')

@@ -1,0 +1,265 @@
+{
+  "sklearn": {
+    "status": "success",
+    "duracao_segundos": 1258.9872827529907,
+    "runner_status": {
+      "framework": "sklearn",
+      "status": "success",
+      "inicio_epoch": 1785248333.5703955,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_sklearn/bin/python",
+      "fim_epoch": 1785249585.7971165,
+      "duracao_segundos": 1252.226721048355,
+      "metricas": {
+        "Accuracy": 0.6763568773234201,
+        "Balanced Accuracy": 0.6715441176470588,
+        "Precision Macro": 0.6795016182873492,
+        "Recall Macro": 0.6715441176470588,
+        "Macro-F1": 0.6724622800406317,
+        "Weighted-F1": 0.6769878816767727,
+        "MCC": 0.6667780970676565,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/sklearn_execucao.log"
+  },
+  "flaml": {
+    "status": "success",
+    "duracao_segundos": 714.7247951030731,
+    "runner_status": {
+      "framework": "flaml",
+      "status": "success",
+      "inicio_epoch": 1785249591.485722,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_flaml/bin/python",
+      "fim_epoch": 1785250300.2189512,
+      "duracao_segundos": 708.7332291603088,
+      "metricas": {
+        "Accuracy": 0.5595539033457249,
+        "Balanced Accuracy": 0.555279411764706,
+        "Precision Macro": 0.557504734664938,
+        "Recall Macro": 0.555279411764706,
+        "Macro-F1": 0.5512313712937149,
+        "Weighted-F1": 0.5555165877996434,
+        "MCC": 0.5464477301123015,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/flaml_execucao.log"
+  },
+  "lazypredict": {
+    "status": "success",
+    "duracao_segundos": 110.62034273147583,
+    "runner_status": {
+      "framework": "lazypredict",
+      "status": "success",
+      "inicio_epoch": 1785250308.3826551,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_lazypredict/bin/python",
+      "fim_epoch": 1785250410.4445174,
+      "duracao_segundos": 102.0618622303009,
+      "metricas": {
+        "Accuracy": 0.660371747211896,
+        "Balanced Accuracy": 0.6553823529411765,
+        "Precision Macro": 0.6601910589149494,
+        "Recall Macro": 0.6553823529411765,
+        "Macro-F1": 0.6564573801329612,
+        "Weighted-F1": 0.6613315224835098,
+        "MCC": 0.6501588347215057,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/lazypredict_execucao.log"
+  },
+  "pycaret": {
+    "status": "success",
+    "duracao_segundos": 797.2930910587311,
+    "runner_status": {
+      "framework": "pycaret",
+      "status": "success",
+      "inicio_epoch": 1785250417.438072,
+      "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_pycaret/bin/python",
+      "fim_epoch": 1785251208.2902565,
+      "duracao_segundos": 790.8521845340729,
+      "metricas": {
+        "Accuracy": 0.1721933085501859,
+        "Balanced Accuracy": 0.1702941176470588,
+        "Precision Macro": 0.13252980775269496,
+        "Recall Macro": 0.1702941176470588,
+        "Macro-F1": 0.12464052963557022,
+        "Weighted-F1": 0.12603057271700782,
+        "MCC": 0.15154958234964372,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/pycaret_execucao.log"
+  },
+  "h2o": {
+    "status": "error",
+    "duracao_segundos": 648.5069007873535,
+    "erro_orquestrador": "CalledProcessError(1, ['/content/bin/micromamba', 'run', '-n', 'ciciot_h2o', 'python', '/content/CICIoT2023_AutoML_Pipeline/automl_runner.py', '--framework', 'h2o', '--config', '/content/CICIoT2023_AutoML_Pipeline/config_multiclasse34.json'])",
+    "runner_status": {
+      "framework": "h2o",
+      "status": "error",
+      "inicio_epoch": 1785251213.757901,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_h2o/bin/python",
+      "fim_epoch": 1785251856.6533089,
+      "duracao_segundos": 642.8954079151154,
+      "erro": "RuntimeError('H2O AutoML terminou sem modelo líder.')",
+      "traceback": "Traceback (most recent call last):\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1617, in executar_framework\n    y_pred, y_proba, leaderboard, info = executar_h2o(\n                                         ^^^^^^^^^^^^^\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 725, in executar_h2o\n    raise RuntimeError(\"H2O AutoML terminou sem modelo líder.\")\nRuntimeError: H2O AutoML terminou sem modelo líder.\n"
+    },
+    "erro_runner": "Traceback (most recent call last):\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1617, in executar_framework\n    y_pred, y_proba, leaderboard, info = executar_h2o(\n                                         ^^^^^^^^^^^^^\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 725, in executar_h2o\n    raise RuntimeError(\"H2O AutoML terminou sem modelo líder.\")\nRuntimeError: H2O AutoML terminou sem modelo líder.\n",
+    "saida_final_comando": "Checking whether there is an H2O instance running at http://localhost:54321..... not found.\nAttempting to start a local H2O server...\n  Java Version: openjdk version \"17.0.18-internal\" 2026-01-20; OpenJDK Runtime Environment (build 17.0.18-internal+0-adhoc.conda.src); OpenJDK 64-Bit Server VM (build 17.0.18-internal+0-adhoc.conda.src, mixed mode, sharing)\n  Starting server from /content/micromamba/envs/ciciot_h2o/lib/python3.11/site-packages/h2o/backend/bin/h2o.jar\n  Ice root: /tmp/tmp5esbjy2u\n  JVM stdout: /tmp/tmp5esbjy2u/h2o_unknownUser_started_from_python.out\n  JVM stderr: /tmp/tmp5esbjy2u/h2o_unknownUser_started_from_python.err\n  Server is running at http://127.0.0.1:54321\nConnecting to H2O server at http://127.0.0.1:54321 ... successful.\n--------------------------  -----------------------------------------------------------------------------------------\nH2O_cluster_uptime:         03 secs\nH2O_cluster_timezone:       Etc/UTC\nH2O_data_parsing_timezone:  UTC\nH2O_cluster_version:        3.46.0.11\nH2O_cluster_version_age:    2 months and 6 days\nH2O_cluster_name:           H2O_from_python_unknownUser_djjrr8\nH2O_cluster_total_nodes:    1\nH2O_cluster_free_memory:    12 Gb\nH2O_cluster_total_cores:    2\nH2O_cluster_allowed_cores:  2\nH2O_cluster_status:         locked, healthy\nH2O_connection_url:         http://127.0.0.1:54321\nH2O_connection_proxy:       {\"http\": null, \"https\": null, \"colab_language_server\": \"/usr/colab/bin/language_service\"}\nH2O_internal_security:      False\nPython_version:             3.11.15 final\n--------------------------  -----------------------------------------------------------------------------------------\n\n15:07:20.202: Project: AutoML_1_20260728_150720\n15:07:20.204: Stopping tolerance set by the user: 1.0E-4\n15:07:20.208: Stopping tolerance set by the user is < 70% of the recommended default of 0.004311226002024692, so models may take a long time to converge or may not converge at all.\n15:07:20.208: Build control seed: 42\n15:07:20.210: training frame: Frame key: AutoML_1_20260728_150720_training_py_1_sid_8021    cols: 40    rows: 53802  chunks: 5    size: 5757557  checksum: 3875184438257254592\n15:07:20.210: validation frame: NULL\n15:07:20.211: leaderboard frame: NULL\n15:07:20.211: blending frame: NULL\n15:07:20.211: response column: label_multiclass\n15:07:20.211: fold column: null\n15:07:20.211: weights column: null\n15:07:20.248: Loading execution steps: [{XGBoost : [def_2 (1g, 10w), def_1 (2g, 10w), def_3 (3g, 10w), grid_1 (4g, 90w), lr_search (7g, 30w)]}, {GLM : [def_1 (1g, 10w)]}, {DRF : [def_1 (2g, 10w), XRT (3g, 10w)]}, {GBM : [def_5 (1g, 10w), def_2 (2g, 10w), def_3 (2g, 10w), def_4 (2g, 10w), def_1 (3g, 10w), grid_1 (4g, 60w), lr_annealing (7g, 10w)]}, {DeepLearning : [def_1 (3g, 10w), grid_1 (4g, 30w), grid_2 (5g, 30w), grid_3 (5g, 30w)]}, {completion : [resume_best_grids (6g, 60w)]}, {StackedEnsemble : [monotonic (9g, 10w), best_of_family_xglm (10g, 10w), all_xglm (10g, 10w)]}]\n15:07:20.298: AutoML job created: 2026.07.28 15:07:20.132\n15:07:20.300: AutoML build started: 2026.07.28 15:07:20.299\n15:07:20.350: AutoML: starting XGBoost_1_AutoML_1_20260728_150720 model training\n\n\n15:17:35.534: XGBoost_1_AutoML_1_20260728_150720 [XGBoost def_2] cancelled\n15:17:35.535: Actual modeling steps: []\n15:17:35.535: AutoML build stopped: 2026.07.28 15:17:35.535\n15:17:35.535: AutoML build done: built 0 models\n15:17:35.535: AutoML duration: 10 min 15.236 sec\n15:17:35.538: Empty leaderboard.\nAutoML was not able to build any model within a max runtime constraint of 600 seconds, you may want to increase this value before retrying.\n\nH2O session _sid_8021 closed.\nTraceback (most recent call last):\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1711, in <module>\n    main()\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1707, in main\n    executar_framework(args.framework, config)\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 1617, in executar_framework\n    y_pred, y_proba, leaderboard, info = executar_h2o(\n                                         ^^^^^^^^^^^^^\n  File \"/content/CICIoT2023_AutoML_Pipeline/automl_runner.py\", line 725, in executar_h2o\n    raise RuntimeError(\"H2O AutoML terminou sem modelo líder.\")\nRuntimeError: H2O AutoML terminou sem modelo líder.\n",
+    "log_comando_que_falhou": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/h2o_execucao.log",
+    "traceback_orquestrador": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_9787/139514621.py\", line 56, in executar_modelos_do_cenario\n    executar_no_ambiente(\n  File \"/tmp/ipykernel_9787/3129552049.py\", line 683, in executar_no_ambiente\n    return executar_comando(\n           ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_9787/3129552049.py\", line 399, in executar_comando\n    raise erro\nsubprocess.CalledProcessError: Command '['/content/bin/micromamba', 'run', '-n', 'ciciot_h2o', 'python', '/content/CICIoT2023_AutoML_Pipeline/automl_runner.py', '--framework', 'h2o', '--config', '/content/CICIoT2023_AutoML_Pipeline/config_multiclasse34.json']' returned non-zero exit status 1.\n",
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/h2o_execucao.log"
+  },
+  "tpot": {
+    "status": "success",
+    "duracao_segundos": 668.2089855670929,
+    "runner_status": {
+      "framework": "tpot",
+      "status": "success",
+      "inicio_epoch": 1785251863.1303465,
+      "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_tpot/bin/python",
+      "fim_epoch": 1785252525.215475,
+      "duracao_segundos": 662.0851285457611,
+      "metricas": {
+        "Accuracy": 0.6670631970260223,
+        "Balanced Accuracy": 0.6618676470588236,
+        "Precision Macro": 0.6761924417533747,
+        "Recall Macro": 0.6618676470588236,
+        "Macro-F1": 0.6611174525193945,
+        "Weighted-F1": 0.6657985470417873,
+        "MCC": 0.6575868346636218,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/tpot_execucao.log"
+  },
+  "autogluon": {
+    "status": "success",
+    "duracao_segundos": 736.7114706039429,
+    "runner_status": {
+      "framework": "autogluon",
+      "status": "success",
+      "inicio_epoch": 1785252531.1609638,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_autogluon/bin/python",
+      "fim_epoch": 1785253262.2367961,
+      "duracao_segundos": 731.0758323669434,
+      "metricas": {
+        "Accuracy": 0.6770260223048327,
+        "Balanced Accuracy": 0.6719411764705884,
+        "Precision Macro": 0.6837549453269319,
+        "Recall Macro": 0.6719411764705884,
+        "Macro-F1": 0.6730008235285796,
+        "Weighted-F1": 0.6776856572430056,
+        "MCC": 0.6676764459078006,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/autogluon_execucao.log"
+  },
+  "autokeras": {
+    "status": "success",
+    "duracao_segundos": 967.9941425323486,
+    "runner_status": {
+      "framework": "autokeras",
+      "status": "success",
+      "inicio_epoch": 1785253277.2050781,
+      "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_autokeras/bin/python",
+      "fim_epoch": 1785254229.309814,
+      "duracao_segundos": 952.1047358512878,
+      "metricas": {
+        "Accuracy": 0.13152416356877322,
+        "Balanced Accuracy": 0.1300735294117647,
+        "Precision Macro": 0.13005817789336221,
+        "Recall Macro": 0.1300735294117647,
+        "Macro-F1": 0.0942793904112697,
+        "Weighted-F1": 0.09533083342700878,
+        "MCC": 0.12375517618022773,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/autokeras_execucao.log"
+  },
+  "autopytorch": {
+    "status": "success",
+    "duracao_segundos": 934.1073131561279,
+    "runner_status": {
+      "framework": "autopytorch",
+      "status": "success",
+      "inicio_epoch": 1785254245.4957123,
+      "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) \n[GCC 13.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_autopytorch/bin/python",
+      "fim_epoch": 1785255164.0717368,
+      "duracao_segundos": 918.5760245323181,
+      "metricas": {
+        "Accuracy": 0.576728624535316,
+        "Balanced Accuracy": 0.574735294117647,
+        "Precision Macro": 0.5933533746047394,
+        "Recall Macro": 0.574735294117647,
+        "Macro-F1": 0.5683745134003801,
+        "Weighted-F1": 0.5724737307354064,
+        "MCC": 0.5653409984869288,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/autopytorch_execucao.log"
+  },
+  "autosklearn": {
+    "status": "success",
+    "duracao_segundos": 773.3485617637634,
+    "runner_status": {
+      "framework": "autosklearn",
+      "status": "success",
+      "inicio_epoch": 1785255172.5307643,
+      "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+      "executable": "/content/micromamba/envs/ciciot_autosklearn/bin/python",
+      "fim_epoch": 1785255937.7147236,
+      "duracao_segundos": 765.1839592456818,
+      "metricas": {
+        "Accuracy": 0.6600743494423792,
+        "Balanced Accuracy": 0.6549117647058823,
+        "Precision Macro": 0.6624260160914464,
+        "Recall Macro": 0.6549117647058823,
+        "Macro-F1": 0.6565721881133701,
+        "Weighted-F1": 0.6615415172262813,
+        "MCC": 0.6499489530610865,
+        "ROC-AUC": NaN,
+        "Average Precision": NaN
+      }
+    },
+    "log_execucao": "/content/drive/MyDrive/CICIoT2023_Resultados/AutoML_Comparativo_Unificado/20260728_082341/multiclasse34/_logs/autosklearn_execucao.log"
+  },
+  "_resumo": {
+    "inicio_epoch": 1785248327.2804613,
+    "fim_epoch": 1785255938.8588297,
+    "duracao_total_segundos": 7611.5783705711365,
+    "frameworks_solicitados": [
+      "sklearn",
+      "flaml",
+      "lazypredict",
+      "pycaret",
+      "h2o",
+      "tpot",
+      "autogluon",
+      "autokeras",
+      "autopytorch",
+      "autosklearn"
+    ]
+  }
+}
