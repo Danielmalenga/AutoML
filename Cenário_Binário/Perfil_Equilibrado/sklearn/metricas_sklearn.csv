@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+sklearn,Accuracy,0.991
+sklearn,Balanced Accuracy,0.991
+sklearn,Precision Macro,0.9911353372535336
+sklearn,Recall Macro,0.991
+sklearn,Macro-F1,0.9909993799472845
+sklearn,Weighted-F1,0.9909993799472846
+sklearn,MCC,0.9821353279288654
+sklearn,Precision Malicious,0.9992881838519423
+sklearn,Recall Malicious,0.9827
+sklearn,F1 Malicious,0.990924674800847
+sklearn,ROC-AUC,0.9971092449999999
+sklearn,Average Precision,0.9977825650745489

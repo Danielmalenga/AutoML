@@ -1,0 +1,21 @@
+{
+  "train_shape": [
+    80000,
+    39
+  ],
+  "test_shape": [
+    20000,
+    39
+  ],
+  "classes_train": {
+    "Benign": 40000,
+    "Malicious": 40000
+  },
+  "classes_test": {
+    "Malicious": 10000,
+    "Benign": 10000
+  },
+  "colunas_removidas_vazias": [],
+  "colunas_removidas_constantes": [],
+  "numero_features": 39
+}

@@ -1,0 +1,23 @@
+{
+  "framework": "pycaret",
+  "status": "success",
+  "inicio_epoch": 1785277901.911343,
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_pycaret/bin/python",
+  "fim_epoch": 1785278088.6286552,
+  "duracao_segundos": 186.71731209754944,
+  "metricas": {
+    "Accuracy": 0.99105,
+    "Balanced Accuracy": 0.99105,
+    "Precision Macro": 0.9911773180726176,
+    "Recall Macro": 0.99105,
+    "Macro-F1": 0.9910494199800383,
+    "Weighted-F1": 0.9910494199800381,
+    "MCC": 0.9822273098210188,
+    "Precision Malicious": 0.9990852728935867,
+    "Recall Malicious": 0.983,
+    "F1 Malicious": 0.9909773678108775,
+    "ROC-AUC": 0.9972280149999999,
+    "Average Precision": 0.9979608093425337
+  }
+}

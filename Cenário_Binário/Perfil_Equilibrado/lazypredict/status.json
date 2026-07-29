@@ -1,0 +1,23 @@
+{
+  "framework": "lazypredict",
+  "status": "success",
+  "inicio_epoch": 1785277822.3594825,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_lazypredict/bin/python",
+  "fim_epoch": 1785277893.1066835,
+  "duracao_segundos": 70.74720096588135,
+  "metricas": {
+    "Accuracy": 0.9907,
+    "Balanced Accuracy": 0.9907,
+    "Precision Macro": 0.9908352545627473,
+    "Recall Macro": 0.9907,
+    "Macro-F1": 0.9906993592788607,
+    "Weighted-F1": 0.9906993592788608,
+    "MCC": 0.9815352452437764,
+    "Precision Malicious": 0.998983119788489,
+    "Recall Malicious": 0.9824,
+    "F1 Malicious": 0.9906221639608752,
+    "ROC-AUC": 0.9967434550000001,
+    "Average Precision": 0.9973122761459899
+  }
+}

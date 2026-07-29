@@ -1,0 +1,5 @@
+{
+  "melhor_modelo": "RandomForest",
+  "macro_f1_cv": 0.9914370072533532,
+  "search_metric": "f1_macro"
+}
