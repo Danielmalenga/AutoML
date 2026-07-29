@@ -1,0 +1,23 @@
+{
+  "framework": "h2o",
+  "status": "success",
+  "inicio_epoch": 1785278152.745231,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_h2o/bin/python",
+  "fim_epoch": 1785281788.2576427,
+  "duracao_segundos": 3635.5124118328094,
+  "metricas": {
+    "Accuracy": 0.98855,
+    "Balanced Accuracy": 0.98855,
+    "Precision Macro": 0.988588701111015,
+    "Recall Macro": 0.98855,
+    "Macro-F1": 0.9885497732568849,
+    "Weighted-F1": 0.9885497732568849,
+    "MCC": 0.9771387003446059,
+    "Precision Malicious": 0.992937140550903,
+    "Recall Malicious": 0.9841,
+    "F1 Malicious": 0.988498819747878,
+    "ROC-AUC": 0.996389975,
+    "Average Precision": 0.9973893381089536
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "search_metric": "autosklearn.metrics.f1_macro",
+  "temporary_directory": "/content/autosklearn_tmp_105739"
+}

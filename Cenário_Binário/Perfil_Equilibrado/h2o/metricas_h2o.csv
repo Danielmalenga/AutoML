@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+h2o,Accuracy,0.98855
+h2o,Balanced Accuracy,0.98855
+h2o,Precision Macro,0.988588701111015
+h2o,Recall Macro,0.98855
+h2o,Macro-F1,0.9885497732568849
+h2o,Weighted-F1,0.9885497732568849
+h2o,MCC,0.9771387003446059
+h2o,Precision Malicious,0.992937140550903
+h2o,Recall Malicious,0.9841
+h2o,F1 Malicious,0.988498819747878
+h2o,ROC-AUC,0.996389975
+h2o,Average Precision,0.9973893381089536

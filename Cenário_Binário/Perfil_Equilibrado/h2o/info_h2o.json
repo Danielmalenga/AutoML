@@ -1,0 +1,5 @@
+{
+  "search_metric": "mean_per_class_error",
+  "comparison_metric": "f1_macro",
+  "h2o_model_id": "XGBoost_grid_1_AutoML_1_20260728_223619_model_2"
+}
