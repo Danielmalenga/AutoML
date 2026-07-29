@@ -1,0 +1,10 @@
+Framework,Métrica,Valor
+autogluon,Accuracy,0.8065909998964145
+autogluon,Balanced Accuracy,0.7620065173480828
+autogluon,Precision Macro,0.7970794394680506
+autogluon,Recall Macro,0.7620065173480828
+autogluon,Macro-F1,0.7726278344747497
+autogluon,Weighted-F1,0.8047696428147165
+autogluon,MCC,0.7763525494485973
+autogluon,ROC-AUC,
+autogluon,Average Precision,
