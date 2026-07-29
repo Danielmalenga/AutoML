@@ -1,0 +1,23 @@
+{
+  "framework": "autogluon",
+  "status": "success",
+  "inicio_epoch": 1785286137.2100253,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_autogluon/bin/python",
+  "fim_epoch": 1785286621.2581973,
+  "duracao_segundos": 484.0481719970703,
+  "metricas": {
+    "Accuracy": 0.99125,
+    "Balanced Accuracy": 0.99125,
+    "Precision Macro": 0.9913711180668923,
+    "Recall Macro": 0.99125,
+    "Macro-F1": 0.9912494607698963,
+    "Weighted-F1": 0.9912494607698962,
+    "MCC": 0.9826211106023743,
+    "Precision Malicious": 0.9990856446205425,
+    "Recall Malicious": 0.9834,
+    "F1 Malicious": 0.99118076903694,
+    "ROC-AUC": 0.9973308450000001,
+    "Average Precision": 0.9979891225713193
+  }
+}
