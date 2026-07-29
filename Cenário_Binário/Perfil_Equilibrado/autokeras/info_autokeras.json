@@ -1,0 +1,10 @@
+{
+  "search_metric": "val_macro_f1",
+  "comparison_metric": "Macro-F1 externo",
+  "label_classes": [
+    "Benign",
+    "Malicious"
+  ],
+  "tuner_directory": "/content/autokeras_tuner_72907",
+  "val_macro_f1_history": []
+}

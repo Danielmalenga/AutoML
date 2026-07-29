@@ -1,0 +1,11 @@
+trial_id,status,score,best_step,hp_structured_data_block_1/normalize,hp_structured_data_block_1/dense_block_1/num_layers,hp_structured_data_block_1/dense_block_1/use_batchnorm,hp_structured_data_block_1/dense_block_1/dropout,hp_structured_data_block_1/dense_block_1/units_0,hp_structured_data_block_1/dense_block_1/units_1,hp_classification_head_1/dropout,hp_optimizer,hp_learning_rate
+03,COMPLETED,0.9822492785995881,3,True,2,False,0,256,32,0.25,adam,0.001
+08,COMPLETED,0.981936397485198,4,True,2,False,0,256,128,0.25,adam,0.001
+09,COMPLETED,0.9779992726009503,9,True,2,False,0,256,32,0.5,adam,0.001
+05,COMPLETED,0.9570735358645837,0,True,2,True,0,256,32,0.25,adam,0.001
+04,COMPLETED,0.9356966935127884,4,True,2,False,0,256,1024,0.25,adam,0.001
+06,COMPLETED,0.9093450177532674,12,False,2,False,0,256,32,0.25,adam,0.001
+07,COMPLETED,0.8706450418149414,0,True,2,False,0,256,32,0.25,adam_weight_decay,0.001
+01,COMPLETED,0.7435790347229524,4,True,2,False,0,256,32,0.0,adam,0.001
+00,COMPLETED,0.5092106155033872,13,True,2,False,0,32,32,0.0,adam,0.001
+02,COMPLETED,0.33361105094173993,0,True,2,False,0,256,32,0.0,adam,0.1
