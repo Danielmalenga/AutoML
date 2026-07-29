@@ -1,0 +1,23 @@
+{
+  "framework": "tpot",
+  "status": "success",
+  "inicio_epoch": 1785281862.6915886,
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "executable": "/content/micromamba/envs/ciciot_tpot/bin/python",
+  "fim_epoch": 1785286044.9373753,
+  "duracao_segundos": 4182.24578666687,
+  "metricas": {
+    "Accuracy": 0.9909,
+    "Balanced Accuracy": 0.9909,
+    "Precision Macro": 0.9910320679850053,
+    "Recall Macro": 0.9909,
+    "Macro-F1": 0.9908993880748541,
+    "Weighted-F1": 0.9908993880748541,
+    "MCC": 0.9819320591035594,
+    "Precision Malicious": 0.9990849938999593,
+    "Recall Malicious": 0.9827,
+    "F1 Malicious": 0.9908247630570679,
+    "ROC-AUC": 0.9968112849999998,
+    "Average Precision": 0.9975688677127649
+  }
+}

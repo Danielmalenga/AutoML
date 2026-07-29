@@ -1,0 +1,13 @@
+Framework,Métrica,Valor
+tpot,Accuracy,0.9909
+tpot,Balanced Accuracy,0.9909
+tpot,Precision Macro,0.9910320679850053
+tpot,Recall Macro,0.9909
+tpot,Macro-F1,0.9908993880748541
+tpot,Weighted-F1,0.9908993880748541
+tpot,MCC,0.9819320591035594
+tpot,Precision Malicious,0.9990849938999593
+tpot,Recall Malicious,0.9827
+tpot,F1 Malicious,0.9908247630570679
+tpot,ROC-AUC,0.9968112849999998
+tpot,Average Precision,0.9975688677127649
