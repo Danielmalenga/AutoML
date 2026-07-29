@@ -1,0 +1,3 @@
+Requirement already satisfied: pip in ./micromamba/envs/ciciot_flaml/lib/python3.11/site-packages (26.1.2)
+Requirement already satisfied: wheel in ./micromamba/envs/ciciot_flaml/lib/python3.11/site-packages (0.47.0)
+Requirement already satisfied: packaging>=24.0 in ./micromamba/envs/ciciot_flaml/lib/python3.11/site-packages (from wheel) (26.2)

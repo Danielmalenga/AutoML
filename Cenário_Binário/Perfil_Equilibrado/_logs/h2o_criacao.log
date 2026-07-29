@@ -1,0 +1,198 @@
+Using Cached Shard Index for conda-forge/linux-64                                                   ✔ Done
+Using Cached Shard Index for conda-forge/noarch                                                     ✔ Done
+Fetching and Parsing Packages' Shards                                                           ⧖ Starting
+Fetching and Parsing Packages' Shards                                                     ✔ Done (1.2 sec)
+
+Resolving Environment                                                                           ⧖ Starting
+Resolving Environment                                                                     ✔ Done (0.2 sec)
+
+Transaction
+
+  Prefix: /content/micromamba/envs/ciciot_h2o
+
+  Updating specs:
+
+   - python=3.11
+   - pip
+   - openjdk=17
+
+
+  Package                           Version  Build                 Channel           Size
+───────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+───────────────────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex                       4.5  20_gnu                conda-forge     Cached
+  + alsa-lib                       1.2.16.1  hb03c661_0            conda-forge      592kB
+  + bzip2                             1.0.8  hda65f42_9            conda-forge     Cached
+  + ca-certificates               2026.7.22  hbd8a1cb_0            conda-forge     Cached
+  + cairo                            1.18.4  he90730b_1            conda-forge      990kB
+  + font-ttf-dejavu-sans-mono          2.37  hab24e00_0            conda-forge      397kB
+  + font-ttf-inconsolata              3.000  h77eed37_0            conda-forge       97kB
+  + font-ttf-source-code-pro          2.038  h77eed37_0            conda-forge      701kB
+  + font-ttf-ubuntu                    0.83  h77eed37_3            conda-forge        2MB
+  + fontconfig                       2.18.2  h27c8c51_0            conda-forge      293kB
+  + fonts-conda-ecosystem                 1  0                     conda-forge        4kB
+  + fonts-conda-forge                     1  hc364b38_1            conda-forge        4kB
+  + freetype                         2.14.3  ha770c72_0            conda-forge      174kB
+  + giflib                            5.2.2  ha257d8a_1            conda-forge       77kB
+  + graphite2                        1.3.15  hecca717_0            conda-forge      100kB
+  + harfbuzz                         14.2.1  ha770c72_1            conda-forge       11kB
+  + icu                                78.3  h54a6638_2            conda-forge     Cached
+  + keyutils                          1.6.3  hb9d3cd8_0            conda-forge      134kB
+  + krb5                             1.22.2  hbde042b_1            conda-forge        1MB
+  + lcms2                            2.19.1  h0c24ade_1            conda-forge      252kB
+  + ld_impl_linux-64                 2.46.1  default_hbd61a6d_102  conda-forge     Cached
+  + lerc                              4.2.0  hdb68285_0            conda-forge      271kB
+  + libcups                           2.3.3  h7a8fb5f_6            conda-forge        5MB
+  + libdeflate                         1.25  h17f619e_0            conda-forge       73kB
+  + libedit                    3.1.20250104  pl5321h7949ede_0      conda-forge      135kB
+  + libexpat                          2.8.1  hecca717_1            conda-forge     Cached
+  + libffi                            3.5.2  h3435931_0            conda-forge     Cached
+  + libfreetype                      2.14.3  ha770c72_0            conda-forge        8kB
+  + libfreetype6                     2.14.3  h73754d4_0            conda-forge      385kB
+  + libgcc                           15.2.0  he0feb66_20           conda-forge     Cached
+  + libgcc-ng                        15.2.0  h69a702a_20           conda-forge     Cached
+  + libglib                          2.88.2  h0d30a3d_0            conda-forge        5MB
+  + libgomp                          15.2.0  he0feb66_20           conda-forge     Cached
+  + libharfbuzz                      14.2.1  h17a8019_1            conda-forge        1MB
+  + libharfbuzz-devel                14.2.1  h17a8019_1            conda-forge        2MB
+  + libiconv                           1.18  h3b78370_2            conda-forge      790kB
+  + libjpeg-turbo                     3.2.0  hb03c661_0            conda-forge      653kB
+  + liblzma                           5.8.3  hb03c661_0            conda-forge     Cached
+  + libnsl                            2.0.1  hb9d3cd8_1            conda-forge     Cached
+  + libpng                           1.6.58  h421ea60_0            conda-forge      318kB
+  + libsqlite                        3.53.4  hf4e2dac_0            conda-forge     Cached
+  + libstdcxx                        15.2.0  h934c35e_20           conda-forge     Cached
+  + libtiff                           4.7.2  h9d88235_0            conda-forge      452kB
+  + libuuid                          2.42.2  h5347b49_0            conda-forge     Cached
+  + libwebp-base                      1.6.0  hd42ef1d_0            conda-forge      429kB
+  + libxcb                           1.17.0  h8a09558_0            conda-forge      396kB
+  + libxcrypt                        4.4.36  hd590300_1            conda-forge     Cached
+  + libzlib                           1.3.2  h25fd6f3_2            conda-forge     Cached
+  + ncurses                             6.6  hdb14827_0            conda-forge     Cached
+  + openjdk                         17.0.18  ha668962_0            conda-forge      174MB
+  + openssl                           3.6.3  h35e630c_0            conda-forge     Cached
+  + packaging                          26.2  pyhc364b38_0          conda-forge     Cached
+  + pcre2                             10.47  haa7fec5_0            conda-forge        1MB
+  + pip                              26.1.2  pyh8b19718_0          conda-forge     Cached
+  + pixman                           0.46.4  h54a6638_2            conda-forge      376kB
+  + pthread-stubs                       0.4  hb9d3cd8_1002         conda-forge        8kB
+  + python                          3.11.15  h7508c33_1_cpython    conda-forge     Cached
+  + readline                            8.3  h853b02a_0            conda-forge     Cached
+  + setuptools                       83.0.0  pyh332efcf_0          conda-forge     Cached
+  + tk                               8.6.13  noxft_hd70dff1_3      conda-forge     Cached
+  + tzdata                            2026c  h151e31d_0            conda-forge     Cached
+  + wheel                            0.47.0  pyhd8ed1ab_0          conda-forge     Cached
+  + xorg-libice                       1.1.2  hb9d3cd8_0            conda-forge       59kB
+  + xorg-libsm                        1.2.6  he73a12e_0            conda-forge       28kB
+  + xorg-libx11                      1.8.13  he1eb515_0            conda-forge      840kB
+  + xorg-libxau                      1.0.12  hb03c661_1            conda-forge       15kB
+  + xorg-libxdmcp                     1.1.5  hb03c661_1            conda-forge       21kB
+  + xorg-libxext                      1.3.7  hb03c661_0            conda-forge       50kB
+  + xorg-libxfixes                    6.0.2  hb03c661_0            conda-forge       20kB
+  + xorg-libxi                        1.8.3  hb03c661_0            conda-forge       48kB
+  + xorg-libxrandr                    1.5.5  hb03c661_0            conda-forge       30kB
+  + xorg-libxrender                  0.9.12  hb9d3cd8_0            conda-forge       33kB
+  + xorg-libxt                        1.3.1  hb9d3cd8_0            conda-forge      380kB
+  + xorg-libxtst                      1.2.5  hb9d3cd8_3            conda-forge       33kB
+  + zstd                              1.5.7  hb78ec9c_6            conda-forge     Cached
+
+  Summary:
+
+  Install: 75 packages
+
+  Total download: 200MB
+
+───────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+Transaction starting
+Linking libzlib-1.3.2-h25fd6f3_2
+Linking libgomp-15.2.0-he0feb66_20
+Linking zstd-1.5.7-hb78ec9c_6
+Linking _openmp_mutex-4.5-20_gnu
+Linking ld_impl_linux-64-2.46.1-default_hbd61a6d_102
+Linking libgcc-15.2.0-he0feb66_20
+Linking libffi-3.5.2-h3435931_0
+Linking tk-8.6.13-noxft_hd70dff1_3
+Linking libiconv-1.18-h3b78370_2
+Linking libwebp-base-1.6.0-hd42ef1d_0
+Linking libdeflate-1.25-h17f619e_0
+Linking keyutils-1.6.3-hb9d3cd8_0
+Linking alsa-lib-1.2.16.1-hb03c661_0
+Linking libjpeg-turbo-3.2.0-hb03c661_0
+Linking giflib-5.2.2-ha257d8a_1
+Linking libpng-1.6.58-h421ea60_0
+Linking bzip2-1.0.8-hda65f42_9
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libexpat-2.8.1-hecca717_1
+Linking libuuid-2.42.2-h5347b49_0
+Linking libgcc-ng-15.2.0-h69a702a_20
+Linking pthread-stubs-0.4-hb9d3cd8_1002
+Linking xorg-libxau-1.0.12-hb03c661_1
+Linking xorg-libxdmcp-1.1.5-hb03c661_1
+Linking xorg-libice-1.1.2-hb9d3cd8_0
+Linking libstdcxx-15.2.0-h934c35e_20
+Linking liblzma-5.8.3-hb03c661_0
+Linking ncurses-6.6-hdb14827_0
+Linking libfreetype6-2.14.3-h73754d4_0
+Linking pcre2-10.47-haa7fec5_0
+Linking libxcrypt-4.4.36-hd590300_1
+Linking libxcb-1.17.0-h8a09558_0
+Linking xorg-libsm-1.2.6-he73a12e_0
+Linking pixman-0.46.4-h54a6638_2
+Linking icu-78.3-h54a6638_2
+Linking lerc-4.2.0-hdb68285_0
+Linking graphite2-1.3.15-hecca717_0
+Linking libedit-3.1.20250104-pl5321h7949ede_0
+Linking readline-8.3-h853b02a_0
+Linking libfreetype-2.14.3-ha770c72_0
+Linking libglib-2.88.2-h0d30a3d_0
+Linking xorg-libx11-1.8.13-he1eb515_0
+Linking libsqlite-3.53.4-hf4e2dac_0
+Linking libtiff-4.7.2-h9d88235_0
+Linking fontconfig-2.18.2-h27c8c51_0
+Linking freetype-2.14.3-ha770c72_0
+Linking xorg-libxfixes-6.0.2-hb03c661_0
+Linking xorg-libxrender-0.9.12-hb9d3cd8_0
+Linking xorg-libxt-1.3.1-hb9d3cd8_0
+Linking xorg-libxext-1.3.7-hb03c661_0
+Linking lcms2-2.19.1-h0c24ade_1
+Linking xorg-libxi-1.8.3-hb03c661_0
+Linking xorg-libxrandr-1.5.5-hb03c661_0
+Linking xorg-libxtst-1.2.5-hb9d3cd8_3
+Linking font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+Linking font-ttf-inconsolata-3.000-h77eed37_0
+Linking font-ttf-source-code-pro-2.038-h77eed37_0
+Linking font-ttf-ubuntu-0.83-h77eed37_3
+Linking tzdata-2026c-h151e31d_0
+Linking ca-certificates-2026.7.22-hbd8a1cb_0
+Linking fonts-conda-forge-1-hc364b38_1
+Linking fonts-conda-ecosystem-1-0
+Linking openssl-3.6.3-h35e630c_0
+Linking cairo-1.18.4-he90730b_1
+Linking krb5-1.22.2-hbde042b_1
+Linking python-3.11.15-h7508c33_1_cpython
+Linking libharfbuzz-14.2.1-h17a8019_1
+Linking libcups-2.3.3-h7a8fb5f_6
+Linking libharfbuzz-devel-14.2.1-h17a8019_1
+Linking harfbuzz-14.2.1-ha770c72_1
+Linking openjdk-17.0.18-ha668962_0
+Linking packaging-26.2-pyhc364b38_0
+Linking setuptools-83.0.0-pyh332efcf_0
+Linking wheel-0.47.0-pyhd8ed1ab_0
+Linking pip-26.1.2-pyh8b19718_0
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    micromamba activate ciciot_h2o
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -n ciciot_h2o mycommand
+

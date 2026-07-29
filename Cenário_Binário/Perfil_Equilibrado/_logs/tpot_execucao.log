@@ -1,0 +1,50 @@
+
+Optimization Progress:   0%|          | 0/20 [00:00<?, ?pipeline/s]
+Optimization Progress:  10%|█         | 2/20 [00:01<00:11,  1.56pipeline/s]
+Optimization Progress:  15%|█▌        | 3/20 [01:14<08:43, 30.79s/pipeline]
+Optimization Progress:  20%|██        | 4/20 [06:46<38:11, 143.23s/pipeline]
+Optimization Progress:  25%|██▌       | 5/20 [08:47<33:54, 135.64s/pipeline]
+Optimization Progress:  30%|███       | 6/20 [09:23<23:53, 102.38s/pipeline]
+Optimization Progress:  35%|███▌      | 7/20 [10:07<18:09, 83.84s/pipeline] 
+Optimization Progress:  40%|████      | 8/20 [13:34<24:28, 122.37s/pipeline]
+Optimization Progress:  45%|████▌     | 9/20 [15:46<22:59, 125.38s/pipeline]
+Optimization Progress:  50%|█████     | 10/20 [16:30<16:44, 100.46s/pipeline]
+Optimization Progress:  55%|█████▌    | 11/20 [16:33<10:35, 70.59s/pipeline] 
+Optimization Progress:  60%|██████    | 12/20 [16:34<06:37, 49.69s/pipeline]
+Optimization Progress:  65%|██████▌   | 13/20 [17:11<05:20, 45.77s/pipeline]
+Optimization Progress:  70%|███████   | 14/20 [17:13<03:15, 32.56s/pipeline]
+Optimization Progress:  75%|███████▌  | 15/20 [27:20<17:07, 205.46s/pipeline]
+Optimization Progress:  85%|████████▌ | 17/20 [28:06<06:03, 121.25s/pipeline]
+Optimization Progress:  90%|█████████ | 18/20 [32:47<05:21, 160.82s/pipeline]
+Optimization Progress:  95%|█████████▌| 19/20 [32:48<01:59, 119.05s/pipeline]
+Optimization Progress: 100%|██████████| 20/20 [32:54<00:00, 88.18s/pipeline] 
+Optimization Progress: 21pipeline [34:15, 86.25s/pipeline]                  
+Optimization Progress:  57%|█████▊    | 23/40 [34:17<13:41, 48.33s/pipeline]
+Optimization Progress:  60%|██████    | 24/40 [34:21<10:03, 37.70s/pipeline]
+Optimization Progress:  62%|██████▎   | 25/40 [44:22<45:26, 181.76s/pipeline]
+Optimization Progress:  68%|██████▊   | 27/40 [47:25<31:07, 143.67s/pipeline]
+Optimization Progress:  70%|███████   | 28/40 [47:26<22:09, 110.76s/pipeline]
+Optimization Progress:  72%|███████▎  | 29/40 [47:54<16:30, 90.00s/pipeline] 
+Optimization Progress:  75%|███████▌  | 30/40 [47:56<11:08, 66.85s/pipeline]
+Optimization Progress:  78%|███████▊  | 31/40 [47:57<07:22, 49.14s/pipeline]
+Optimization Progress:  80%|████████  | 32/40 [53:27<17:01, 127.65s/pipeline]
+Optimization Progress:  82%|████████▎ | 33/40 [59:56<23:36, 202.36s/pipeline]
+Optimization Progress:  85%|████████▌ | 34/40 [1:07:04<26:47, 267.93s/pipeline]
+                                                                               
+
+Optimization Progress:  85%|████████▌ | 34/40 [1:07:04<26:47, 267.93s/pipeline]
+                                                                               
+67.10 minutes have elapsed. TPOT will close down.
+TPOT closed during evaluation in one generation.
+WARNING: TPOT may not provide a good pipeline if TPOT is stopped/interrupted in a early generation.
+
+Optimization Progress:  85%|████████▌ | 34/40 [1:07:04<26:47, 267.93s/pipeline]
+                                                                               
+
+Optimization Progress:  85%|████████▌ | 34/40 [1:07:04<26:47, 267.93s/pipeline]
+                                                                               
+TPOT closed prematurely. Will use the current best pipeline.
+
+Optimization Progress:  85%|████████▌ | 34/40 [1:07:04<26:47, 267.93s/pipeline]
+                                                                               
+Best pipeline: RandomForestClassifier(input_matrix, bootstrap=True, criterion=gini, max_features=0.7000000000000001, min_samples_leaf=3, min_samples_split=5, n_estimators=100)

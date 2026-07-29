@@ -1,0 +1,40 @@
+====================================================================================================
+VALIDAÇÃO DOS MODELOS DO PYCARET
+====================================================================================================
+Modelos solicitados: ['lr', 'dt', 'rf', 'et', 'lightgbm', 'xgboost']
+Modelos indisponíveis: []
+Todos os modelos solicitados estão disponíveis.
+====================================================================================================
+
+Processing:   0%|          | 0/29 [00:00<?, ?it/s]
+Processing:  14%|█▍        | 4/29 [00:00<00:00, 39.93it/s]
+Processing:  17%|█▋        | 5/29 [00:45<04:47, 12.00s/it]
+Processing:  24%|██▍       | 7/29 [00:45<02:31,  6.90s/it]
+Processing:  34%|███▍      | 10/29 [00:55<01:38,  5.19s/it]
+Processing:  41%|████▏     | 12/29 [00:56<01:01,  3.60s/it]
+Processing:  45%|████▍     | 13/29 [02:01<03:58, 14.91s/it]
+Processing:  52%|█████▏    | 15/29 [02:01<02:17,  9.84s/it]
+Processing:  59%|█████▊    | 17/29 [02:31<02:18, 11.56s/it]
+Processing:  66%|██████▌   | 19/29 [02:32<01:19,  7.90s/it]
+Processing:  72%|███████▏  | 21/29 [02:43<00:57,  7.14s/it]
+Processing:  79%|███████▉  | 23/29 [02:43<00:29,  4.97s/it]
+Processing:  86%|████████▌ | 25/29 [02:52<00:19,  4.78s/it]
+Processing:  93%|█████████▎| 27/29 [02:52<00:06,  3.34s/it]
+Processing: 100%|██████████| 29/29 [02:54<00:00,  2.62s/it]
+                                                           
+                                    Model  Accuracy     AUC  Recall   Prec.  \
+lightgbm  Light Gradient Boosting Machine    0.9918  0.9976  0.9918  0.9919   
+rf               Random Forest Classifier    0.9912  0.9969  0.9912  0.9913   
+xgboost         Extreme Gradient Boosting    0.9910  0.9972  0.9910  0.9911   
+et                 Extra Trees Classifier    0.9896  0.9962  0.9896  0.9897   
+lr                    Logistic Regression    0.9870  0.9928  0.9870  0.9873   
+dt               Decision Tree Classifier    0.9837  0.9837  0.9837  0.9837   
+
+              F1   Kappa     MCC  Macro F1  TT (Sec)  
+lightgbm  0.9918  0.9837  0.9838    0.9918     2.192  
+rf        0.9912  0.9824  0.9825    0.9912    13.084  
+xgboost   0.9910  0.9821  0.9822    0.9910     1.736  
+et        0.9896  0.9791  0.9793    0.9895     6.034  
+lr        0.9870  0.9740  0.9744    0.9868     9.104  
+dt        0.9837  0.9675  0.9675    0.9838     1.996  
+Transformation Pipeline and Model Successfully Saved

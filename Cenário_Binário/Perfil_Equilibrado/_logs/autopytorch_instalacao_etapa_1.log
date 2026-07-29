@@ -1,0 +1,37 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu117
+Collecting torch==1.13.1+cu117
+  Downloading https://download-r2.pytorch.org/whl/cu117/torch-1.13.1%2Bcu117-cp38-cp38-linux_x86_64.whl (1801.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 GB 115.1 MB/s eta 0:00:00
+Collecting torchvision==0.14.1+cu117
+  Downloading https://download-r2.pytorch.org/whl/cu117/torchvision-0.14.1%2Bcu117-cp38-cp38-linux_x86_64.whl (24.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.3/24.3 MB 128.8 MB/s eta 0:00:00
+Collecting typing-extensions (from torch==1.13.1+cu117)
+  Downloading https://download.pytorch.org/whl/typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: numpy in ./micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages (from torchvision==0.14.1+cu117) (1.23.5)
+Collecting requests (from torchvision==0.14.1+cu117)
+  Downloading requests-2.32.4-py3-none-any.whl.metadata (4.9 kB)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in ./micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages (from torchvision==0.14.1+cu117) (10.4.0)
+Collecting charset_normalizer<4,>=2 (from requests->torchvision==0.14.1+cu117)
+  Downloading charset_normalizer-3.4.9-py3-none-any.whl.metadata (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 8.2 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests->torchvision==0.14.1+cu117)
+  Downloading idna-3.15-py3-none-any.whl.metadata (7.7 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->torchvision==0.14.1+cu117)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Requirement already satisfied: certifi>=2017.4.17 in ./micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages (from requests->torchvision==0.14.1+cu117) (2024.8.30)
+INFO: pip is looking at multiple versions of typing-extensions to determine which version is compatible with other requirements. This could take a while.
+Collecting typing-extensions (from torch==1.13.1+cu117)
+  Downloading https://download.pytorch.org/whl/typing_extensions-4.14.0-py3-none-any.whl.metadata (3.0 kB)
+  Downloading typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+Downloading requests-2.32.4-py3-none-any.whl (64 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.8/64.8 kB 191.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 91.0 MB/s eta 0:00:00
+Downloading charset_normalizer-3.4.9-py3-none-any.whl (64 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.5/64.5 kB 214.6 MB/s eta 0:00:00
+Downloading idna-3.15-py3-none-any.whl (72 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.3/72.3 kB 216.0 MB/s eta 0:00:00
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.3/126.3 kB 261.2 MB/s eta 0:00:00
+Installing collected packages: urllib3, typing-extensions, idna, charset_normalizer, torch, requests, torchvision
+Successfully installed charset_normalizer-3.4.9 idna-3.15 requests-2.32.4 torch-1.13.1+cu117 torchvision-0.14.1+cu117 typing-extensions-4.13.2 urllib3-2.2.3

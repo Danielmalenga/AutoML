@@ -1,0 +1,688 @@
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[ERROR] [2026-07-29 01:36:37,973:Client-AutoPyTorch:CICIoT2023_binario:42] Prediction for catboost failed with run state StatusType.CRASHED.
+Additional info:
+traceback: Traceback (most recent call last):
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/tae.py", line 61, in fit_predict_try_except_decorator
+    ta(queue=queue, **kwargs)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 512, in eval_train_function
+    evaluator.fit_predict_and_loss()
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 186, in fit_predict_and_loss
+    y_train_pred, y_opt_pred, y_valid_pred, y_test_pred = self._fit_and_predict(pipeline, split_id,
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/train_evaluator.py", line 364, in _fit_and_predict
+    fit_and_suppress_warnings(self.logger, pipeline, X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 339, in fit_and_suppress_warnings
+    pipeline.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/evaluation/abstract_evaluator.py", line 111, in fit
+    return self.pipeline.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/base_pipeline.py", line 155, in fit
+    self.fit_estimator(X, y, **fit_params)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/base_pipeline.py", line 174, in fit_estimator
+    self._final_estimator.fit(X, y, **fit_params)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/base_choice.py", line 217, in fit
+    return self.choice.fit(X, y)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/base_model.py", line 98, in fit
+    self.fit_output = self.model.fit(X['X_train'][X['train_indices']], X['y_train'][X['train_indices']],
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/traditional_learner/base_traditional_learner.py", line 182, in fit
+    self._prepare_model(X_train, y_train)
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/site-packages/autoPyTorch/pipeline/components/setup/traditional_ml/traditional_learner/learners.py", line 127, in _prepare_model
+    self.config['eval_metric'] = AutoPyTorchToCatboostMetrics[self.metric.name].value
+  File "/content/micromamba/envs/ciciot_autopytorch/lib/python3.8/enum.py", line 387, in __getitem__
+    return cls._member_map_[name]
+KeyError: 'f1_macro'
+
+error: KeyError('f1_macro')
+configuration_origin: traditional
+[ERROR] [2026-07-29 02:47:39,483:Client-AutoPyTorch:RefitLogger:42] Prediction for lgb failed with run state StatusType.TIMEOUT.
+Additional info:
+error: Timeout
+configuration_origin: traditional
+[WARNING] [2026-07-29 02:47:39,483:Client-AutoPyTorch:RefitLogger:42] Not enough time to fit all machine learning models.Please consider increasing the run time to further improve performance.
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[LightGBM] [Warning] min_data_in_leaf is set=3, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=3
+[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+[WARNING] [2026-07-29 02:47:59,384:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,404:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,406:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,407:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,407:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,408:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,409:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,416:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,419:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,454:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,455:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,456:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,458:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,458:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,462:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,462:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,476:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,479:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,481:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,482:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,483:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,485:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,486:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,488:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,491:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,492:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,494:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,496:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,498:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,499:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,502:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,503:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,505:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,507:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,508:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,510:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,512:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,513:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,515:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,516:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,518:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,519:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,608:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,609:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,610:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,610:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,611:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,612:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,612:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,618:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,618:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,630:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,631:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,632:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,633:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,634:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,635:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,636:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,637:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,638:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,639:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,640:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,641:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,642:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,643:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,645:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,646:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,647:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,649:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,650:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,651:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,652:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,653:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,654:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,656:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,657:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,658:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,660:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,661:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,662:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,663:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,664:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,665:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,667:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,667:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,669:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,670:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,672:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,672:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,674:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,674:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,676:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,677:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,678:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,680:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,680:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,682:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,683:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,684:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,686:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,686:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,688:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,689:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,690:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,691:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,692:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,693:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,695:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,695:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,697:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,697:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,699:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,700:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,701:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,703:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,703:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:47:59,704:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,763:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,764:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,764:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,765:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,766:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,766:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,767:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,771:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,771:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,798:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,798:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,799:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,800:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,800:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,801:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,802:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,806:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,806:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,816:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,817:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,818:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,819:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,821:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,822:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,824:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,825:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,826:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,827:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,829:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,830:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,831:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,833:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,834:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,836:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,838:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,841:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,842:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,844:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,846:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,847:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,916:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,917:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,918:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,918:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,919:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,919:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,920:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,924:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,924:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,934:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,934:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,935:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,936:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,937:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,938:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,939:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,940:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,941:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,942:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,943:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,944:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,945:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,946:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,946:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,948:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,948:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,949:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,950:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,951:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,952:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,953:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,954:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,955:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,956:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,958:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,958:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,959:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,960:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,961:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,963:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,963:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,965:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,966:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,971:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,973:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,976:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,978:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,979:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,981:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,981:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,984:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,985:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,986:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,988:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,989:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,991:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,992:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,994:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,996:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:00,998:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,001:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,002:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,173:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,174:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,175:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,178:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,182:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,190:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,194:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,198:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,198:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,199:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,199:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,211:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,212:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,212:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,213:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,225:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,226:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,227:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,229:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,230:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,230:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,282:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,287:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,288:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,289:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,289:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,295:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,296:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,296:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,297:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,357:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,358:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,358:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,360:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,361:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,362:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,436:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,439:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,443:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,444:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,447:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,448:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,450:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,454:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,454:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,455:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,455:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,456:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,456:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,458:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,465:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,466:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,467:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,467:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,469:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,470:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,471:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,472:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,721:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,721:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,722:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,724:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,727:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,730:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,730:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,732:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,733:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,734:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,734:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,746:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,747:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,747:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,748:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,760:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,761:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,761:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,763:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,764:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,764:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,819:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,824:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,825:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,825:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,826:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,831:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,832:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,832:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,833:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,885:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,886:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,886:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,888:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,889:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,889:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,956:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,959:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,963:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,964:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,966:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,968:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,970:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,974:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,974:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,975:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,976:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,977:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,977:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,978:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,978:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,979:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,986:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,987:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,988:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,988:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,989:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,990:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,991:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:01,992:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,343:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,344:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,345:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,345:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,346:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,347:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,347:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,351:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,351:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,362:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,362:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,363:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,363:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,364:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,364:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,365:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,368:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,369:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,372:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,372:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,374:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,375:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,377:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,378:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,379:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,380:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,381:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,382:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,383:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,412:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,413:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,413:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,414:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,414:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,415:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,415:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,420:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,420:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,424:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,424:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,425:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,427:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,427:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,429:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,430:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,431:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,432:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,433:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,435:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,437:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,442:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,443:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,446:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,448:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,450:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,452:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,454:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,457:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,460:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,463:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.
+[WARNING] [2026-07-29 02:48:02,464:matplotlib.font_manager] findfont: Font family 'Times New Roman' not found.

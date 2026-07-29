@@ -1,0 +1,136 @@
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting scipy==1.15.3
+  Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting pandas==2.2.3
+  Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Collecting scikit-learn==1.6.1
+  Downloading scikit_learn-1.6.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting pyarrow==19.0.1
+  Downloading pyarrow-19.0.1-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting matplotlib==3.9.4
+  Downloading matplotlib-3.9.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting joblib==1.4.2
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting psutil==6.1.1
+  Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting typing_extensions==4.12.2
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting autogluon.tabular==1.5.0 (from autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading autogluon_tabular-1.5.0-py3-none-any.whl.metadata (16 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==2.2.3)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==2.2.3)
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas==2.2.3)
+  Downloading tzdata-2026.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.6.1)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.9.4)
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib==3.9.4)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.9.4)
+  Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.9.4)
+  Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging>=20.0 in ./micromamba/envs/ciciot_autogluon/lib/python3.11/site-packages (from matplotlib==3.9.4) (26.2)
+Collecting pillow>=8 (from matplotlib==3.9.4)
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=2.3.1 (from matplotlib==3.9.4)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting networkx<4,>=3.0 (from autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting autogluon.core==1.5.0 (from autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading autogluon_core-1.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting autogluon.features==1.5.0 (from autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading autogluon_features-1.5.0-py3-none-any.whl.metadata (12 kB)
+Collecting tqdm<5,>=4.38 (from autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading tqdm-4.70.0-py3-none-any.whl.metadata (57 kB)
+Collecting requests (from autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting boto3<2,>=1.10 (from autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading boto3-1.43.58-py3-none-any.whl.metadata (6.6 kB)
+Collecting autogluon.common==1.5.0 (from autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading autogluon_common-1.5.0-py3-none-any.whl.metadata (12 kB)
+Collecting pyyaml>=5.0 (from autogluon.common==1.5.0->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting lightgbm<4.7,>=4.0 (from autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading lightgbm-4.6.0-py3-none-manylinux_2_28_x86_64.whl.metadata (17 kB)
+Collecting xgboost<3.2,>=2.0 (from autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading xgboost-3.1.3-py3-none-manylinux_2_28_x86_64.whl.metadata (2.0 kB)
+Collecting botocore<1.44.0,>=1.43.58 (from boto3<2,>=1.10->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading botocore-1.43.58-py3-none-any.whl.metadata (5.6 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3<2,>=1.10->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.20.0,>=0.19.0 (from boto3<2,>=1.10->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading s3transfer-0.19.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.44.0,>=1.43.58->boto3<2,>=1.10->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting nvidia-nccl-cu12 (from xgboost<3.2,>=2.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading nvidia_nccl_cu12-2.30.7-py3-none-manylinux_2_18_x86_64.whl.metadata (2.1 kB)
+Collecting charset_normalizer<4,>=2 (from requests->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (41 kB)
+Collecting idna<4,>=2.5 (from requests->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting certifi>=2023.5.7 (from requests->autogluon.core==1.5.0->autogluon.tabular==1.5.0->autogluon.tabular[lightgbm,xgboost]==1.5.0)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Downloading numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 168.0 MB/s eta 0:00:00
+Downloading scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 183.5 MB/s eta 0:00:00
+Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 231.2 MB/s eta 0:00:00
+Downloading scikit_learn-1.6.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.5/13.5 MB 223.7 MB/s eta 0:00:00
+Downloading pyarrow-19.0.1-cp311-cp311-manylinux_2_28_x86_64.whl (42.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 MB 159.2 MB/s eta 0:00:00
+Downloading matplotlib-3.9.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 116.7 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (287 kB)
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading autogluon_tabular-1.5.0-py3-none-any.whl (515 kB)
+Downloading autogluon_core-1.5.0-py3-none-any.whl (227 kB)
+Downloading autogluon_common-1.5.0-py3-none-any.whl (74 kB)
+Downloading autogluon_features-1.5.0-py3-none-any.whl (98 kB)
+Downloading boto3-1.43.58-py3-none-any.whl (140 kB)
+Downloading botocore-1.43.58-py3-none-any.whl (15.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.4/15.4 MB 80.2 MB/s eta 0:00:00
+Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+Downloading lightgbm-4.6.0-py3-none-manylinux_2_28_x86_64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 230.0 MB/s eta 0:00:00
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 259.8 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading s3transfer-0.19.2-py3-none-any.whl (90 kB)
+Downloading tqdm-4.70.0-py3-none-any.whl (80 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading xgboost-3.1.3-py3-none-manylinux_2_28_x86_64.whl (115.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.9/115.9 MB 183.4 MB/s eta 0:00:00
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 132.3 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 134.0 MB/s eta 0:00:00
+Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 132.3 MB/s eta 0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 133.7 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2026.3-py2.py3-none-any.whl (348 kB)
+Downloading nvidia_nccl_cu12-2.30.7-py3-none-manylinux_2_18_x86_64.whl (303.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.4/303.4 MB 50.1 MB/s eta 0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (221 kB)
+Downloading idna-3.18-py3-none-any.whl (65 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing_extensions, tqdm, threadpoolctl, six, pyyaml, pyparsing, pyarrow, psutil, pillow, nvidia-nccl-cu12, numpy, networkx, kiwisolver, joblib, jmespath, idna, fonttools, cycler, charset_normalizer, certifi, scipy, requests, python-dateutil, contourpy, xgboost, scikit-learn, pandas, matplotlib, lightgbm, botocore, s3transfer, boto3, autogluon.common, autogluon.features, autogluon.core, autogluon.tabular
+
+Successfully installed autogluon.common-1.5.0 autogluon.core-1.5.0 autogluon.features-1.5.0 autogluon.tabular-1.5.0 boto3-1.43.58 botocore-1.43.58 certifi-2026.7.22 charset_normalizer-3.4.9 contourpy-1.3.3 cycler-0.12.1 fonttools-4.63.0 idna-3.18 jmespath-1.1.0 joblib-1.4.2 kiwisolver-1.5.0 lightgbm-4.6.0 matplotlib-3.9.4 networkx-3.6.1 numpy-1.26.4 nvidia-nccl-cu12-2.30.7 pandas-2.2.3 pillow-12.3.0 psutil-6.1.1 pyarrow-19.0.1 pyparsing-3.3.2 python-dateutil-2.9.0.post0 pytz-2026.3.post1 pyyaml-6.0.3 requests-2.34.2 s3transfer-0.19.2 scikit-learn-1.6.1 scipy-1.15.3 six-1.17.0 threadpoolctl-3.6.0 tqdm-4.70.0 typing_extensions-4.12.2 tzdata-2026.3 urllib3-2.7.0 xgboost-3.1.3
