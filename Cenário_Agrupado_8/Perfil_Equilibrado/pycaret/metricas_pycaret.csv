@@ -1,0 +1,10 @@
+Framework,Métrica,Valor
+pycaret,Accuracy,0.49337792444174794
+pycaret,Balanced Accuracy,0.41676250000000004
+pycaret,Precision Macro,0.38125905280427896
+pycaret,Recall Macro,0.41676250000000004
+pycaret,Macro-F1,0.35569651517472445
+pycaret,Weighted-F1,0.42108589037657723
+pycaret,MCC,0.4272157796434125
+pycaret,ROC-AUC,
+pycaret,Average Precision,
